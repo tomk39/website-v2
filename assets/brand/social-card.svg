@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tomislav Kranjec social preview</title>
+  <desc id="desc">Premium AI infrastructure and data center networking publication social preview card.</desc>
+  <defs>
+    <radialGradient id="halo" cx="30%" cy="20%" r="70%">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.42"/>
+      <stop offset="0.46" stop-color="#38bdf8" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#halo)"/>
+  <g opacity="0.3" stroke="#1e293b" stroke-width="1">
+    <path d="M80 120h1040M80 220h1040M80 320h1040M80 420h1040M80 520h1040"/>
+    <path d="M180 80v470M320 80v470M460 80v470M600 80v470M740 80v470M880 80v470M1020 80v470"/>
+  </g>
+  <image href="logo-mark.svg" x="88" y="96" width="112" height="112"/>
+  <text x="88" y="285" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800" fill="#f8fafc">Tomislav Kranjec</text>
+  <text x="92" y="348" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#7dd3fc">AI Infrastructure &amp; Data Center Networking</text>
+  <text x="92" y="430" font-family="Inter, Arial, sans-serif" font-size="25" fill="#cbd5e1">EVPN/VXLAN • Cisco ACI • AI Fabrics • Service Provider • Cloud Networking</text>
+  <g fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity="0.75">
+    <path d="M775 250h250M775 350h250M830 250l-75 100 75 100M975 250l75 100-75 100"/>
+  </g>
+  <g fill="#38bdf8">
+    <circle cx="775" cy="250" r="7"/>
+    <circle cx="1025" cy="250" r="7"/>
+    <circle cx="755" cy="350" r="7"/>
+    <circle cx="1050" cy="350" r="7"/>
+    <circle cx="775" cy="450" r="7"/>
+    <circle cx="1025" cy="450" r="7"/>
+  </g>
+</svg>

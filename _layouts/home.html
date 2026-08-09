@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<section class="home-hero">
+  <div class="hero-copy">
+    <p class="eyebrow">AI infrastructure and network engineering</p>
+    <h1>{{ site.title }}</h1>
+    <p>Architecture notes, deployment guides, and practical insights drawn from real-world experience with AI infrastructure, enterprise networking, cloud connectivity, and operational leadership.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ '/start-here/' | relative_url }}">Start here</a>
+      <a class="button secondary" href="{{ '/categories/' | relative_url }}">Browse topics</a>
+    </div>
+  </div>
+  <img class="hero-image" src="{{ '/assets/images/ai-fabric-topology.svg' | relative_url }}" alt="AI infrastructure spine leaf fabric visualization">
+</section>
+
+<section class="featured-band" aria-labelledby="featured-heading">
+  <div class="section-heading">
+    <p class="eyebrow">Featured Articles</p>
+    <h2 id="featured-heading">Architecture notes, labs, and field guides</h2>
+  </div>
+  <div class="post-grid">
+    {% for post in site.posts limit: 6 %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="topics-band" aria-labelledby="topics-heading">
+  <div class="section-heading">
+    <p class="eyebrow">INFRASTRUCTURE DOMAINS</p>
+    <h2 id="topics-heading">Explore architecture, operations, and deployment guides</h2>
+  </div>
+  <div class="category-card-grid">
+    {% include category-card.html title="VXLAN" description="VXLAN overlays, tunnel endpoints, packet flow analysis, underlay design, and deployment guidance." anchor="vxlan" %}
+    {% include category-card.html title="EVPN" description="EVPN control-plane design, route types, MAC/IP learning, route exchange, and fabric validation." anchor="evpn" %}
+    {% include category-card.html title="Cisco ACI" description="Policy-driven networking, tenant design, contracts, EPGs, fabric architecture, and operational best practices." anchor="cisco-aci" %}
+<!--
+    {% include category-card.html title="Data Center" description="Spine-leaf architectures, EVPN fabrics, segmentation, AI-ready infrastructure, and operational design patterns." anchor="data-center" %}
+    {% include category-card.html title="Cloud" description="Azure connectivity, hybrid networking, cloud integration, and enterprise infrastructure design." anchor="cloud" %}
+    {% include category-card.html title="Automation" description="Automation frameworks, operational tooling, infrastructure workflows, and engineering efficiency." anchor="automation" %}
+-->
+  </div>
+</section>

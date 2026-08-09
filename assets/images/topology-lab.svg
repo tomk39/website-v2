@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title">
+  <title id="title">Network lab topology</title>
+  <rect width="960" height="540" fill="#e8f0f9"/>
+  <rect x="72" y="72" width="816" height="396" rx="28" fill="#ffffff"/>
+  <g fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round">
+    <path d="M232 270h180"/>
+    <path d="M548 270h180"/>
+    <path d="M412 270l68-104 68 104-68 104z"/>
+  </g>
+  <g fill="#082f61">
+    <rect x="146" y="212" width="120" height="116" rx="20"/>
+    <rect x="420" y="132" width="120" height="116" rx="20"/>
+    <rect x="420" y="292" width="120" height="116" rx="20"/>
+    <rect x="694" y="212" width="120" height="116" rx="20"/>
+  </g>
+  <g fill="#1e6091">
+    <circle cx="206" cy="270" r="13"/>
+    <circle cx="480" cy="190" r="13"/>
+    <circle cx="480" cy="350" r="13"/>
+    <circle cx="754" cy="270" r="13"/>
+  </g>
+</svg>

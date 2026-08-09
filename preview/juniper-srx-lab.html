@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juniper SRX Lab | Tomislav Kranjec</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script defer src="/assets/js/search.js"></script>
+  </head>
+  <body>
+    <div class="reading-progress" data-reading-progress></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/"><img class="brand-mark" src="/assets/brand/logo-mark.svg" alt="" width="46" height="46"><span class="brand-copy"><strong>Tomislav Kranjec</strong><small>AI Infrastructure &amp; Data Center Networking</small></span></a>
+        <nav class="site-nav" aria-label="Primary navigation"><a href="#">Home</a><a href="#">Start Here</a><a href="#">Categories</a><a href="#">Downloads</a><a href="#">Certifications</a><a href="#">About</a></nav>
+        <button class="icon-button search-open" type="button" aria-label="Open search" data-search-open><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg></button>
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="true" data-theme-toggle><span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-thumb"></span></span></button>
+      </div>
+    </header>
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title" hidden data-search-modal>
+      <div class="search-backdrop" data-search-close></div>
+      <section class="search-dialog">
+        <div class="search-dialog-header">
+          <div><p class="eyebrow">Search publication</p><h2 id="search-modal-title">Find labs, designs, and commands</h2></div>
+          <button class="icon-button" type="button" aria-label="Close search" data-search-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12"></path><path d="M18 6 6 18"></path></svg></button>
+        </div>
+        <form class="modal-search-form" role="search"><label class="sr-only" for="site-search">Search articles</label><input id="site-search" type="search" placeholder="Search ACI, VXLAN, SRX, NAT..."></form>
+        <div class="search-suggestions" aria-label="Suggested searches"><a href="#">Cisco ACI</a><a href="#">VXLAN</a><a href="#">Juniper SRX</a><a href="#">EVPN</a><a href="#">NAT</a></div>
+      </section>
+    </div>
+    <main id="main-content">
+      <article class="article-shell">
+        <header class="article-header" data-pagefind-body>
+          <div class="article-kicker"><a href="#">Juniper</a><a href="#">Lab</a></div>
+          <h1>Juniper SRX Lab</h1>
+          <p>A practical SRX lab structure for zones, policies, and NAT with cleaner reading flow.</p>
+          <div class="article-meta-grid">
+            <span><strong>Published</strong><time>May 1, 2026</time></span>
+            <span><strong>Reading time</strong>5 min</span>
+            <span><strong>Focus</strong>srx, security, nat</span>
+          </div>
+        </header>
+        <img class="article-cover" src="/assets/images/topology-lab.svg" alt="">
+        <div class="article-layout">
+          <aside class="toc" aria-label="Table of contents">
+            <strong>On this page</strong>
+            <ol>
+              <li><a href="#what-you-will-learn">What you will learn</a></li>
+              <li><a href="#topology">Topology</a></li>
+              <li><a href="#base-configuration">Base configuration</a></li>
+              <li><a href="#verification">Verification</a></li>
+            </ol>
+          </aside>
+          <div class="article-content" data-pagefind-body>
+            <h2 id="what-you-will-learn">What you will learn</h2>
+            <p>Use this opening section to tell readers what the lab covers before they reach the configuration details.</p>
+            <div class="callout"><strong>Tip:</strong> Put assumptions here, such as software version, interface names, and topology notes.</div>
+            <h2 id="topology">Topology</h2>
+            <p>Describe the topology with one diagram and a short table. Readers should understand zones, interfaces, and routing before reading configuration blocks.</p>
+            <h2 id="base-configuration">Base configuration</h2>
+            <p>Use focused code blocks. The template adds a copy button automatically.</p>
+            <pre><code>set security zones security-zone trust interfaces ge-0/0/1.0
+set security zones security-zone untrust interfaces ge-0/0/0.0
+set security policies from-zone trust to-zone untrust policy allow-web match source-address any
+set security policies from-zone trust to-zone untrust policy allow-web match destination-address any
+set security policies from-zone trust to-zone untrust policy allow-web match application junos-http
+set security policies from-zone trust to-zone untrust policy allow-web then permit</code></pre>
+            <h2 id="verification">Verification</h2>
+            <p>Show the exact command, the expected healthy output, and what to check when output differs.</p>
+            <pre><code>show security flow session
+show security policies hit-count
+show security nat source rule all</code></pre>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

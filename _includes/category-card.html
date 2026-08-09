@@ -1,0 +1,14 @@
+{% assign category_posts_count = 0 %}
+{% for category in site.categories %}
+  {% assign category_id = category[0] | slugify %}
+  {% if category_id == include.anchor %}
+    {% assign category_posts_count = category[1].size %}
+  {% endif %}
+{% endfor %}
+
+<a class="category-card" href="{{ '/categories/#' | append: include.anchor | relative_url }}">
+  {% include category-icon.html id=include.anchor %}
+  <span>{{ include.title }}</span>
+  <p>{{ include.description }}</p>
+  <strong>{{ category_posts_count }} posts</strong>
+</a>

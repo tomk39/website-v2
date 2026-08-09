@@ -1,0 +1,60 @@
+title: Tomislav Kranjec
+description: Engineering insights on AI infrastructure, data center fabrics, EVPN/VXLAN, cloud connectivity, service provider, and enterprise networking.
+url: "hhttps://tomk39.github.io"
+baseurl: "/website-v2"
+permalink: /:categories/:title/
+timezone: Asia/Dubai
+logo: /assets/brand/logo-mark.svg
+image: /assets/brand/social-card.svg
+google_analytics: "G-5WNBNK6X00"
+
+author:
+  name: Tomislav Kranjec
+  description: AI infrastructure and data center networking notes, labs, and field-tested design patterns.
+
+social:
+  linkedin: "https://linkedin.com/in/tkranjec"
+#  x: "https://x.com/"
+#  youtube: "https://www.youtube.com/"
+#  github: "https://github.com/"
+
+popular_topics:
+  - title: Cisco ACI
+    anchor: cisco-aci
+  - title: VXLAN
+    anchor: vxlan
+  - title: EVPN
+    anchor: evpn
+#  - title: AI Fabrics
+#    anchor: ai-fabrics
+#  - title: Service Provider
+#    anchor: service-provider
+#  - title: Cloud Networking
+#    anchor: cloud
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      image: /assets/images/topology-lab.svg
+      toc: true
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - preview
+  - package.json
+  - README.md
+  - node_modules

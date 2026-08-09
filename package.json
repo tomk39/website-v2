@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "preview": "node preview/server.mjs",
+    "index": "pagefind --site _site",
+    "brand:assets": "node scripts/generate-brand-assets.mjs"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  }
+}

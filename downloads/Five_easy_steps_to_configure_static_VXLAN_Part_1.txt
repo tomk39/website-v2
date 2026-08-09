@@ -1,0 +1,36 @@
+***Configs for static vxlan***
+Details you can find on the following link https://tomislavk.blog/vxlan/overlay/linux/static_vxlan_part1/
+
+***Apply configuration on srv***
+ip netns add vm3 
+ip link add br-vxlan type bridge
+ip link set br-vxlan up
+ip link set mtu 9000 dev br-vxlan
+brctl stp br-vxlan off
+ip link add veth0 type veth peer veth1
+ip link set up veth0
+ip link set veth0 master br-vxlan
+ip netns exec vm3 ip a a 192.168.22.1/24 dev veth1
+ip netns exec vm3 ip link set up veth1
+ip link add vx0 type vxlan id 100 local 192.168.100.20 remote 192.168.100.21 dev ens0 dstport 4789
+ip a a 192.168.1.1/24 dev vx0
+ip link set vx0 up
+ip link set vx0 master br-vxlan
+bridge fdb append 00:00:00:00:00:00 dev vx0 dst 192.168.100.21
+
+***Apply configuration on srv1***
+ip netns add vm1
+ip link add br-vxlan type bridge
+ip link set br-vxlan up
+ip link set mtu 9000 dev br-vxlan
+brctl stp br-vxlan off
+ip link add veth0 type veth peer veth1
+ip link set up veth0
+ip link set veth0 master br-vxlan
+ip netns exec vm1 ip a a 192.168.22.2/24 dev veth1
+ip netns exec vm1 ip link set up veth1
+ip link add vx0 type vxlan id 100 local 192.168.100.21 remote 192.168.100.20 dev ens0 dstport 4789
+ip a a 192.168.1.2/24 dev vx0
+ip link set vx0 up
+ip link set vx0 master br-vxlan
+bridge fdb append 00:00:00:00:00:00 dev vx0 dst 192.168.100.20

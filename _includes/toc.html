@@ -1,0 +1,12 @@
+<aside class="toc" aria-label="Table of contents">
+  <strong>On this page</strong>
+  {% assign headings = include.html | split: '<h2' %}
+  <ol>
+    {% for heading in headings offset: 1 %}
+      {% assign title = heading | split: '</h2>' | first | split: '>' | last | strip_html %}
+      {% if title != "" %}
+        <li><a href="#{{ title | slugify }}">{{ title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</aside>

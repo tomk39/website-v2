@@ -1,0 +1,23 @@
+{% assign icon_id = include.id | default: "default" | slugify %}
+{% assign icon_file = "topology" %}
+{% case icon_id %}
+  {% when "aci", "cisco-aci" %}
+    {% assign icon_file = "fabric" %}
+  {% when "vxlan", "evpn", "evpn-vxlan" %}
+    {% assign icon_file = "vxlan" %}
+  {% when "juniper" %}
+    {% assign icon_file = "switch" %}
+  {% when "cloud", "cloud-networking" %}
+    {% assign icon_file = "cloud" %}
+  {% when "automation" %}
+    {% assign icon_file = "automation" %}
+  {% when "data-center", "data-center-networking" %}
+    {% assign icon_file = "server" %}
+  {% when "ai", "ai-fabrics", "ai-infrastructure" %}
+    {% assign icon_file = "ai" %}
+  {% when "security", "firewall", "service-provider" %}
+    {% assign icon_file = "firewall" %}
+{% endcase %}
+<span class="category-icon" aria-hidden="true">
+  <img src="{{ '/assets/icons/category/' | append: icon_file | append: '.svg' | relative_url }}" alt="" loading="lazy">
+</span>

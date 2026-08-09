@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="title">
+  <title id="title">Network engineering workspace</title>
+  <rect width="960" height="620" fill="#e8f0f9"/>
+  <rect x="80" y="80" width="800" height="430" rx="28" fill="#ffffff"/>
+  <rect x="130" y="132" width="700" height="322" rx="18" fill="#d9e8f7"/>
+  <g fill="none" stroke="#123f7a" stroke-width="5">
+    <path d="M250 285h180"/>
+    <path d="M530 285h180"/>
+    <path d="M430 285c0-80 100-80 100 0"/>
+    <path d="M430 285c0 80 100 80 100 0"/>
+  </g>
+  <g fill="#ffffff" stroke="#1e6091" stroke-width="5">
+    <rect x="198" y="238" width="92" height="92" rx="18"/>
+    <rect x="434" y="238" width="92" height="92" rx="18"/>
+    <rect x="670" y="238" width="92" height="92" rx="18"/>
+  </g>
+  <g fill="#0b4f8a">
+    <circle cx="244" cy="284" r="11"/>
+    <circle cx="480" cy="284" r="11"/>
+    <circle cx="716" cy="284" r="11"/>
+  </g>
+  <rect x="220" y="540" width="520" height="24" rx="12" fill="#d8e0ee"/>
+</svg>

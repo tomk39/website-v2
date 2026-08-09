@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tomislav Kranjec | Preview</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script defer src="/assets/js/search.js"></script>
+  </head>
+  <body>
+    <div class="reading-progress" data-reading-progress></div>
+    <header class="site-header">
+      <a class="skip-link" href="#main-content">Skip to content</a>
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <img class="brand-mark" src="/assets/brand/logo-mark.svg" alt="" width="46" height="46">
+          <span class="brand-copy"><strong>Tomislav Kranjec</strong><small>AI Infrastructure &amp; Data Center Networking </small></span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#">Home</a>
+          <a href="#">Start Here</a>
+          <a href="#">Categories</a>
+          <a href="#">Downloads</a>
+          <a href="#">Certifications</a>
+          <a href="#">About</a>
+        </nav>
+        <button class="icon-button search-open" type="button" aria-label="Open search" data-search-open><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg></button>
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="true" data-theme-toggle><span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-thumb"></span></span></button>
+      </div>
+    </header>
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title" hidden data-search-modal>
+      <div class="search-backdrop" data-search-close></div>
+      <section class="search-dialog">
+        <div class="search-dialog-header">
+          <div><p class="eyebrow">Search publication</p><h2 id="search-modal-title">Find labs, designs, and commands</h2></div>
+          <button class="icon-button" type="button" aria-label="Close search" data-search-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12"></path><path d="M18 6 6 18"></path></svg></button>
+        </div>
+        <form class="modal-search-form" role="search"><label class="sr-only" for="site-search">Search articles</label><input id="site-search" type="search" placeholder="Search ACI, VXLAN, SRX, NAT..."></form>
+        <div class="search-suggestions" aria-label="Suggested searches"><a href="#">Cisco ACI</a><a href="#">VXLAN</a><a href="#">Juniper SRX</a><a href="#">EVPN</a><a href="#">NAT</a></div>
+      </section>
+    </div>
+    <main id="main-content">
+      <section class="home-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI infrastructure and network engineering</p>
+          <h1>Tomislav Kranjec</h1>
+          <p>Deep dives into AI infrastructure, data center fabrics, EVPN/VXLAN, service provider, cloud networking, automation, and enterprise architecture.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#">Start here</a>
+            <a class="button secondary" href="#">Browse topics</a>
+          </div>
+        </div>
+        <img class="hero-image" src="/assets/images/ai-fabric-topology.svg" alt="AI infrastructure spine leaf fabric visualization">
+      </section>
+      <section class="featured-band" aria-labelledby="featured-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Articles</p>
+          <h2 id="featured-heading">Architecture notes, labs, and field guides</h2>
+        </div>
+        <div class="post-grid">
+          <article class="post-card">
+            <a class="post-image-link" href="/juniper-srx-lab/"><img src="/assets/images/topology-lab.svg" alt=""></a>
+            <div class="post-card-body">
+              <div class="post-tags"><span>Juniper</span><span>Lab</span></div>
+              <h3><a href="/juniper-srx-lab/">Juniper SRX Lab</a></h3>
+              <p>A practical SRX lab structure for zones, policies, and NAT with cleaner reading flow.</p>
+              <div class="post-card-meta"><time>May 1, 2026</time><span>5 min</span><a href="/juniper-srx-lab/">Read article</a></div>
+            </div>
+          </article>
+          <article class="post-card">
+            <a class="post-image-link" href="#"><img src="/assets/images/network-desk.svg" alt=""></a>
+            <div class="post-card-body">
+              <div class="post-tags"><span>Cisco ACI</span><span>Data Center</span></div>
+              <h3><a href="#">Cisco ACI Contracts Made Easier to Read</a></h3>
+              <p>A clearer way to explain ACI contracts, filters, providers, and consumers.</p>
+              <div class="post-card-meta"><time>Apr 18, 2026</time><span>4 min</span><a href="#">Read article</a></div>
+            </div>
+          </article>
+          <article class="post-card">
+            <a class="post-image-link" href="#"><img src="/assets/images/topology-lab.svg" alt=""></a>
+            <div class="post-card-body">
+              <div class="post-tags"><span>VXLAN</span><span>Lab</span></div>
+              <h3><a href="#">VXLAN Lab Checklist</a></h3>
+              <p>A compact checklist for validating overlay reachability and common VXLAN lab issues.</p>
+              <div class="post-card-meta"><time>Apr 4, 2026</time><span>3 min</span><a href="#">Read article</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="topics-band" aria-labelledby="topics-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Browse by System</p>
+          <h2 id="topics-heading">Explore infrastructure domains</h2>
+        </div>
+        <div class="category-card-grid">
+          <a class="category-card" href="#"><span class="category-icon" aria-hidden="true"></span><span>Cisco ACI</span><p>Policy-driven data center fabrics, contracts, tenants, and operational patterns.</p><strong>12 posts</strong></a>
+          <a class="category-card" href="#"><span class="category-icon" aria-hidden="true"></span><span>VXLAN</span><p>EVPN/VXLAN overlays, route exchange, packet flow, and troubleshooting.</p><strong>8 posts</strong></a>
+          <a class="category-card" href="#"><span class="category-icon" aria-hidden="true"></span><span>Juniper</span><p>SRX labs, security policy, NAT, routing, and verification workflows.</p><strong>6 posts</strong></a>
+          <a class="category-card" href="#"><span class="category-icon" aria-hidden="true"></span><span>Data Center</span><p>Spine-leaf design, fabric operations, segmentation, and infrastructure architecture.</p><strong>10 posts</strong></a>
+          <a class="category-card" href="#"><span class="category-icon" aria-hidden="true"></span><span>Cloud</span><p>Hybrid connectivity, cloud networking, and enterprise infrastructure integration.</p><strong>5 posts</strong></a>
+          <a class="category-card" href="#"><span class="category-icon" aria-hidden="true"></span><span>Automation</span><p>Repeatable engineering workflows, templates, and operational tooling.</p><strong>4 posts</strong></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand"><div class="footer-logo"><img class="brand-mark" src="/assets/brand/logo-mark.svg" alt="" width="40" height="40"><strong>Tomislav Kranjec</strong></div><p>Deep dives into AI infrastructure, data center fabrics, EVPN/VXLAN, service provider, cloud networking, automation, and enterprise architecture.</p></div>
+        <div class="footer-columns"><div><h2>Navigation</h2><a href="#">Home</a><a href="#">Start Here</a><a href="#">About</a></div><div><h2>Categories</h2><a href="#">Cisco ACI</a><a href="#">VXLAN</a><a href="#">Juniper</a></div><div><h2>Popular Topics</h2><a href="#">Cisco ACI</a><a href="#">EVPN/VXLAN</a><a href="#">AI Fabrics</a><a href="#">Service Provider</a><a href="#">Cloud Networking</a></div><div><h2>Social Links</h2><div class="social-links"><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5V18"></path><path d="M6.5 6.5v.01"></path><path d="M11 18v-8.5"></path><path d="M11 13.3c0-2.5 1.4-4 3.5-4 2 0 3 1.3 3 3.7v5"></path></svg><span>LinkedIn</span></a><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14"></path><path d="M19 5 5 19"></path></svg><span>X / Twitter</span></a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="7" width="17" height="10" rx="3"></rect><path d="m10.5 10 4 2-4 2z"></path></svg><span>YouTube</span></a><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.2-4-2-5.5-2.5"></path><path d="M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6A4.7 4.7 0 0 0 18.7 7c.1-.3.6-1.6-.2-3.2 0 0-1.1-.3-3.5 1.3a12.1 12.1 0 0 0-6 0C6.6 3.5 5.5 3.8 5.5 3.8 4.7 5.4 5.2 6.7 5.3 7A4.7 4.7 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"></path></svg><span>GitHub</span></a></div></div></div>
+        <p class="copyright">&copy; 2026 Tomislav Kranjec. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

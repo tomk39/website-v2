@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Tomislav Kranjec TK logo</title>
+  <defs>
+    <linearGradient id="mark-bg" x1="12" x2="84" y1="10" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="mark-panel" x1="18" x2="78" y1="14" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#172554"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="mark-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#2563eb" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect x="5" y="5" width="86" height="86" rx="20" fill="url(#mark-bg)" filter="url(#mark-glow)"/>
+  <rect x="8" y="8" width="80" height="80" rx="18" fill="url(#mark-panel)" opacity="0.94"/>
+  <path fill="#ffffff" d="M20 26h33v9H41v35h-9V35H20z"/>
+  <path fill="#ffffff" d="M56 26h9v18l16-18h11L73 47l20 23H81L65 51v19h-9z"/>
+  <path fill="#60a5fa" d="M68 45 84 26h8L74 47l19 23h-9L68 51z" opacity="0.8"/>
+</svg>

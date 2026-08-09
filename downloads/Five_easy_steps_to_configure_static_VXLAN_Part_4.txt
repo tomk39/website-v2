@@ -1,0 +1,35 @@
+dcgw1
+net add loopback lo ip address 192.168.1.4/32
+net add interface swp3 ip address 172.21.100.1/30
+net add ospf router-id 192.168.1.4
+net add ospf network 192.168.1.4/32 area 1
+net add ospf network 172.21.100.0/30 area 1
+net add ospf network 192.168.1.4/32 area 1
+net add ospf passive-interface swp1
+net add ospf passive-interface swp2
+net add ospf passive-interface swp4
+net add ospf passive-interface swp5
+net add ospf passive-interface swp6
+net add ospf passive-interface swp7
+net add interface swp3 ospf network point-to-point
+
+net add vxlan vni-103 vxlan id 103
+net add bridge br-12 ports vni-103
+net add vxlan vni-103 vxlan remoteip 192.168.1.5
+net add vxlan vni-103 vxlan local-tunnelip 192.168.1.4
+
+dc2gw
+set protocols ospf traceoptions file ospf
+set protocols ospf traceoptions file size 1m
+set protocols ospf traceoptions file files 2
+set protocols ospf traceoptions file world-readable
+set protocols ospf area 0.0.0.1 interface xe-0/0/4.0 interface-type p2p
+set protocols ospf area 0.0.0.1 interface lo0.5
+
+set bridge-domains br-vl22 vlan-id 22
+set bridge-domains br-vl22 vxlan vni 103
+set bridge-domains br-vl22 vxlan ingress-node-replication
+set interfaces lo0 unit 5 family inet address 192.168.1.5/32
+set interfaces xe-0/0/4 unit 0 family inet address 172.21.101.1/30
+set interfaces xe-0/0/6 unit 0 family bridge interface-mode access
+set interfaces xe-0/0/6 unit 0 family bridge vlan-id 22

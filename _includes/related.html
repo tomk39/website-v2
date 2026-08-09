@@ -1,0 +1,11 @@
+{% assign related_posts = site.related_posts | slice: 0, 3 %}
+{% if related_posts.size > 0 %}
+  <section class="related-posts" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related articles</h2>
+    <div class="post-grid compact">
+      {% for post in related_posts %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
