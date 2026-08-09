@@ -1,6 +1,6 @@
 title: Tomislav Kranjec
 description: Engineering insights on AI infrastructure, data center fabrics, EVPN/VXLAN, cloud connectivity, service provider, and enterprise networking.
-url: "hhttps://tomk39.github.io"
+url: "https://tomk39.github.io"
 baseurl: "/website-v2"
 permalink: /:categories/:title/
 timezone: Asia/Dubai
