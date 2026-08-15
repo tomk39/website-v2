@@ -7,17 +7,21 @@ description: Architecture, operations, and technology strategy for modern infras
 
 <section class="about-section about-intro">
 
-  <p>
-    I'm <strong>Tomislav Kranjec</strong>, Head of IT and Network and IT Infrastructure Architect. I have been designing, operating, and evolving enterprise and service provider infrastructure since 1998. I hold a CCIE #50448 Emeritus.
-  </p>
+<p>
+  I'm <strong>Tomislav Kranjec</strong>, a Technology Leader and Network &amp; IT Infrastructure Architect. I've spent my career designing, operating, and evolving enterprise and service provider infrastructure.
+</p>
 
-  <p>
-    My work spans network architecture, data centers, cloud platforms, automation, and infrastructure strategy. I have worked in telecommunications, in enterprise environments, and in global business operations, today inside an international commodities and oil logistics trading business.
-  </p>
+<p>
+  My work spans network architecture, data centers, cloud platforms, virtualization, automation, and infrastructure strategy. Throughout my career, I’ve worked across different industries, countries, cultures, and languages, collaborating with people from diverse technical and business backgrounds.
+</p>
 
-  <p>
-    What holds my attention is where architecture, operations, and business outcomes meet, and a technical decision shows up in reliability, growth, and long-term success.
-  </p>
+<p>
+  I’m most interested in where architecture, operations, and business outcomes meet, where technical decisions have a real impact on reliability, growth, cost, and long-term success.
+</p>
+
+<p>
+  <strong>CCIE #50448 Emeritus</strong>
+</p>
 
 </section>
 
@@ -28,44 +32,44 @@ description: Architecture, operations, and technology strategy for modern infras
   <div class="about-grid">
 
     <article class="about-card">
-      <h3>Enterprise and Service Provider Networking</h3>
+      <h3>Infrastructure Architecture</h3>
       <p>
-        Routing, switching, secure connectivity, provider networks, operational design, and resilient network architecture.
+        Designing and evolving infrastructure across networks, data centers, cloud platforms, and hybrid environments, with an emphasis on simplicity, resilience, scalability, and long-term maintainability.
       </p>
     </article>
 
     <article class="about-card">
-      <h3>Data Center Architecture</h3>
+      <h3>Data Center &amp; Network Infrastructure</h3>
       <p>
-        Fabric design, infrastructure platforms, segmentation, scalability, resiliency, and modern data center operating models.
+        Enterprise and service provider networking, modern data center fabrics, routing, switching, segmentation, resiliency, and the operational realities behind infrastructure design.
       </p>
     </article>
 
     <article class="about-card">
       <h3>EVPN/VXLAN and Modern Fabrics</h3>
       <p>
-        Overlay networking, fabric validation, packet flow, architecture standards, and practical implementation guidance.
+        Understanding how modern network fabrics actually work — from control plane and data plane behavior to packet flow, failure scenarios, design decisions, and production operations.
       </p>
     </article>
 
     <article class="about-card">
       <h3>Cloud and Hybrid Infrastructure</h3>
       <p>
-        Cloud connectivity, hybrid architecture, enterprise integration, remote-site design, and infrastructure modernization.
+        Connecting traditional infrastructure with cloud platforms, virtualization, remote sites, and distributed environments while keeping architecture, security, operations, and connectivity under control.
       </p>
     </article>
 
     <article class="about-card">
       <h3>Automation and AI</h3>
       <p>
-        Repeatable workflows, operational discipline, verification methods, documentation, and sustainable day-two practices.
+        Using automation to make infrastructure more repeatable and easier to operate, while exploring how AI is changing infrastructure platforms, engineering workflows, and the way technology is consumed.
       </p>
     </article>
 
     <article class="about-card">
       <h3>Technology Strategy and Governance</h3>
       <p>
-        Architecture standards, modernization planning, vendor alignment, technical leadership, and business-focused decision making.
+        Looking beyond individual technologies to understand architecture choices, modernization, standards, vendor decisions, technical debt, operational impact, and the relationship between technology and business objectives.
       </p>
     </article>
 
@@ -73,30 +77,44 @@ description: Architecture, operations, and technology strategy for modern infras
 
 </section>
 
+
 <section class="about-section">
 
   <h2>Perspective</h2>
 
   <p>
-    I believe great infrastructure is built on clear architecture, operational discipline, and thoughtful design. Technology should be practical, scalable, secure, and aligned with the needs of the organization it supports.
+    I like technology that works. 
+  </p>
+  <p>
+    Not just in a diagram or a lab, but in production, under pressure, and when things inevitably change. Good architecture should solve the problem without creating five new ones.
   </p>
 
   <p>
-    This site reflects that view: technical notes, architecture references, lab guides, diagrams, and operational lessons from data center, service provider, and enterprise infrastructure.
+    I’m interested in how things actually work, what happens inside the technology, why an architecture makes sense, where it breaks down, and what we can do better.
   </p>
 
-</section>
+  <p>
+    This site is where I share what I know and what I’m learning across infrastructure, networking, data centers, cloud, automation, AI, and technology strategy.
+  </p>
+
+</section>  
 
 <section class="about-section about-closing">
 
   <p>
-    Beyond my professional work, I enjoy sports, travel, reading, continuous learning, and keeping close to emerging technology.
+    Outside technology, I enjoy sports, travel, reading, continuous learning, and exploring new ideas and technologies.
   </p>
 
   <p>
-    <strong>Let's connect what matters and design what comes next.</strong>
+    <strong>Understand how it works. Make good decisions. Build for the long term.</strong>
   </p>
 
-</section>
 
+</section>  
+
+### Disclaimer
+
+This is a personal website. The views, opinions, and technical information shared here are my own and do not represent those of my current or former employers, clients, or any organization I have worked with.
+
+The content reflects my experience, observations, and understanding at the time of writing. Technical examples and recommendations are provided for educational and informational purposes and should be evaluated against your own environment, requirements, and vendor documentation before being used in production.
 
