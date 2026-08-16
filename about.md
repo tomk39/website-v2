@@ -105,6 +105,7 @@ description: Architecture, operations, and technology strategy for modern infras
     Outside technology, I enjoy sports, travel, reading, continuous learning, and exploring new ideas and technologies.
   </p>
 
+
   <p>
     <strong>Understand how it works. Make good decisions. Build for the long term.</strong>
   </p>
@@ -112,9 +113,18 @@ description: Architecture, operations, and technology strategy for modern infras
 
 </section>  
 
+<br>
+<br>
+<br>
+
+
+
 ### Disclaimer
 
 This is a personal website. The views, opinions, and technical information shared here are my own and do not represent those of my current or former employers, clients, or any organization I have worked with.
 
 The content reflects my experience, observations, and understanding at the time of writing. Technical examples and recommendations are provided for educational and informational purposes and should be evaluated against your own environment, requirements, and vendor documentation before being used in production.
+
+
+
 
