@@ -1,9 +1,15 @@
-{% if site.google_analytics %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5WNBNK6X00"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
   gtag('js', new Date());
-  gtag('config', '{{ site.google_analytics }}');
+
+  gtag('config', 'G-5WNBNK6X00');
 </script>
-{% endif %}
+<!-- End Google Analytics 4 -->
