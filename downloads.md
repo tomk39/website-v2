@@ -18,7 +18,7 @@ description: Engineering resources, topology diagrams, architecture templates, t
     <p class="eyebrow">Cheatsheet</p>
     <h2>Ethernet Frame and IP headers</h2>
     <p>Practical reference guide for Ethernet, IPv4, TCP/UDP, VXLAN, GRE, and modern network encapsulation headers used in enterprise and data center networks.</p>
-    <a href="{{ '/downloads/traditional_network_vs_application_centric_tomislavk.blog.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+    <a href="{{ '/downloads/network_headers_encapsulation_tomislavk.blog.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
   </article>
     <article class="download-card">
     <p class="eyebrow">Configs</p>
