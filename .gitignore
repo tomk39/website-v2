@@ -11,3 +11,12 @@ _site/
 .jekyll-metadata
 .bundle/
 vendor/
+
+# Claude factory — local only, not needed by the website
+CLAUDE.md
+.claude/
+.env
+.env.example
+_drafts/
+_factory/
+
