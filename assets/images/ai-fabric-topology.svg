@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
   <title id="title">AI infrastructure data center fabric</title>
-  <desc id="desc">A realistic dark engineering illustration showing GPU compute racks connected to leaf and spine switches with EVPN VXLAN overlay paths, services, storage, and cloud edge.</desc>
+  <desc id="desc">An animated dark engineering illustration of GPU pods connected through a full-mesh leaf-spine fabric. Packets travel between GPUs in different pods (GPU to leaf to spine to leaf to GPU) in both ring directions, as in an all-reduce collective.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#13213a"/>
@@ -37,6 +37,66 @@
       </feMerge>
     </filter>
   </defs>
+  <style>
+.pkt{opacity:0}
+.trail{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;opacity:0;filter:url(#soft)}
+.gflash{fill:#f0f9ff;opacity:0}
+.led{animation:led 2.8s ease-in-out infinite}
+.led2{animation-duration:3.7s;animation-delay:-1.2s}
+.led3{animation-duration:4.4s;animation-delay:-2.1s}
+@keyframes led{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){
+  .pkt,.trail,.gflash,.led{animation:none!important}
+}
+@keyframes p0{0%{transform:translate(270px,566px);opacity:1}0.72%{transform:translate(270px,548px);opacity:1}4.38%{transform:translate(265px,456px);opacity:1}7.64%{transform:translate(265px,374px);opacity:1}14.35%{transform:translate(405px,280px);opacity:1}15.07%{transform:translate(405px,262px);opacity:1}15.78%{transform:translate(405px,280px);opacity:1}21.24%{transform:translate(505px,374px);opacity:1}24.51%{transform:translate(505px,456px);opacity:1}28.17%{transform:translate(510px,548px);opacity:1}28.89%{transform:translate(510px,566px);opacity:1}28.99%{transform:translate(510px,566px);opacity:0}100%{transform:translate(510px,566px);opacity:0}}
+.p0{animation:p0 9.0s linear -0.00s infinite}
+@keyframes t0{0%{stroke-dashoffset:90;opacity:.85}28.89%{stroke-dashoffset:-636.1;opacity:.85}28.99%{opacity:0}100%{stroke-dashoffset:-636.1;opacity:0}}
+.t0{stroke-dasharray:90 1126;animation:t0 9.0s linear -0.00s infinite}
+@keyframes p1{0%{transform:translate(750px,566px);opacity:1}0.54%{transform:translate(750px,548px);opacity:1}3.29%{transform:translate(745px,456px);opacity:1}5.75%{transform:translate(745px,374px);opacity:1}10.59%{transform:translate(877px,280px);opacity:1}11.13%{transform:translate(877px,262px);opacity:1}11.67%{transform:translate(877px,280px);opacity:1}23.14%{transform:translate(505px,374px);opacity:1}25.6%{transform:translate(505px,456px);opacity:1}28.35%{transform:translate(510px,548px);opacity:1}28.89%{transform:translate(510px,566px);opacity:1}28.99%{transform:translate(510px,566px);opacity:0}100%{transform:translate(510px,566px);opacity:0}}
+.p1{animation:p1 9.0s linear -7.50s infinite}
+@keyframes t1{0%{stroke-dashoffset:90;opacity:.85}28.89%{stroke-dashoffset:-876.0;opacity:.85}28.99%{opacity:0}100%{stroke-dashoffset:-876.0;opacity:0}}
+.t1{stroke-dasharray:90 1366;animation:t1 9.0s linear -7.50s infinite}
+@keyframes p2{0%{transform:translate(510px,566px);opacity:1}0.72%{transform:translate(510px,548px);opacity:1}4.38%{transform:translate(505px,456px);opacity:1}7.65%{transform:translate(505px,374px);opacity:1}14.23%{transform:translate(641px,280px);opacity:1}14.94%{transform:translate(641px,262px);opacity:1}15.66%{transform:translate(641px,280px);opacity:1}21.24%{transform:translate(745px,374px);opacity:1}24.51%{transform:translate(745px,456px);opacity:1}28.17%{transform:translate(750px,548px);opacity:1}28.89%{transform:translate(750px,566px);opacity:1}28.99%{transform:translate(750px,566px);opacity:0}100%{transform:translate(750px,566px);opacity:0}}
+.p2{animation:p2 9.0s linear -6.00s infinite}
+@keyframes t2{0%{stroke-dashoffset:90;opacity:.85}28.89%{stroke-dashoffset:-635.8;opacity:.85}28.99%{opacity:0}100%{stroke-dashoffset:-635.8;opacity:0}}
+.t2{stroke-dasharray:90 1126;animation:t2 9.0s linear -6.00s infinite}
+@keyframes p3{0%{transform:translate(510px,566px);opacity:1}0.72%{transform:translate(510px,548px);opacity:1}4.38%{transform:translate(505px,456px);opacity:1}7.64%{transform:translate(505px,374px);opacity:1}13.1%{transform:translate(405px,280px);opacity:1}13.82%{transform:translate(405px,262px);opacity:1}14.54%{transform:translate(405px,280px);opacity:1}21.24%{transform:translate(265px,374px);opacity:1}24.51%{transform:translate(265px,456px);opacity:1}28.17%{transform:translate(270px,548px);opacity:1}28.89%{transform:translate(270px,566px);opacity:1}28.99%{transform:translate(270px,566px);opacity:0}100%{transform:translate(270px,566px);opacity:0}}
+.p3{animation:p3 9.0s linear -4.50s infinite}
+@keyframes t3{0%{stroke-dashoffset:90;opacity:.85}28.89%{stroke-dashoffset:-636.1;opacity:.85}28.99%{opacity:0}100%{stroke-dashoffset:-636.1;opacity:0}}
+.t3{stroke-dasharray:90 1126;animation:t3 9.0s linear -4.50s infinite}
+@keyframes p4{0%{transform:translate(750px,566px);opacity:1}0.43%{transform:translate(750px,548px);opacity:1}2.65%{transform:translate(745px,456px);opacity:1}4.62%{transform:translate(745px,374px);opacity:1}8.52%{transform:translate(877px,280px);opacity:1}8.95%{transform:translate(877px,262px);opacity:1}9.38%{transform:translate(877px,280px);opacity:1}24.27%{transform:translate(265px,374px);opacity:1}26.24%{transform:translate(265px,456px);opacity:1}28.46%{transform:translate(270px,548px);opacity:1}28.89%{transform:translate(270px,566px);opacity:1}28.99%{transform:translate(270px,566px);opacity:0}100%{transform:translate(270px,566px);opacity:0}}
+.p4{animation:p4 9.0s linear -3.00s infinite}
+@keyframes t4{0%{stroke-dashoffset:90;opacity:.85}28.89%{stroke-dashoffset:-1111.5;opacity:.85}28.99%{opacity:0}100%{stroke-dashoffset:-1111.5;opacity:0}}
+.t4{stroke-dasharray:90 1601;animation:t4 9.0s linear -3.00s infinite}
+@keyframes p5{0%{transform:translate(270px,566px);opacity:1}0.55%{transform:translate(270px,548px);opacity:1}3.36%{transform:translate(265px,456px);opacity:1}5.85%{transform:translate(265px,374px);opacity:1}17.67%{transform:translate(641px,280px);opacity:1}18.21%{transform:translate(641px,262px);opacity:1}18.76%{transform:translate(641px,280px);opacity:1}23.03%{transform:translate(745px,374px);opacity:1}25.53%{transform:translate(745px,456px);opacity:1}28.34%{transform:translate(750px,548px);opacity:1}28.89%{transform:translate(750px,566px);opacity:1}28.99%{transform:translate(750px,566px);opacity:0}100%{transform:translate(750px,566px);opacity:0}}
+.p5{animation:p5 9.0s linear -1.50s infinite}
+@keyframes t5{0%{stroke-dashoffset:90;opacity:.85}28.89%{stroke-dashoffset:-858.0;opacity:.85}28.99%{opacity:0}100%{stroke-dashoffset:-858.0;opacity:0}}
+.t5{stroke-dasharray:90 1348;animation:t5 9.0s linear -1.50s infinite}
+@keyframes gA0{0%{opacity:0.0}0.56%{opacity:0.4}1.11%{opacity:0.79}1.67%{opacity:0.95}2.78%{opacity:0.95}3.33%{opacity:0.87}3.89%{opacity:0.79}4.44%{opacity:0.71}5%{opacity:0.63}5.56%{opacity:0.55}6.11%{opacity:0.48}6.67%{opacity:0.4}7.22%{opacity:0.32}7.78%{opacity:0.24}8.33%{opacity:0.16}8.89%{opacity:0.08}9.44%{opacity:0.0}100%{opacity:0.0}}
+.gA0{animation:gA0 9.0s linear infinite}
+@keyframes gA1{0%{opacity:0.71}0.56%{opacity:0.63}1.11%{opacity:0.55}1.67%{opacity:0.47}2.22%{opacity:0.4}2.78%{opacity:0.32}3.33%{opacity:0.24}3.89%{opacity:0.16}4.44%{opacity:0.08}5%{opacity:0.0}95.56%{opacity:0.0}96.11%{opacity:0.4}96.67%{opacity:0.79}97.22%{opacity:0.95}98.33%{opacity:0.95}98.89%{opacity:0.87}99.44%{opacity:0.79}100%{opacity:0.71}}
+.gA1{animation:gA1 9.0s linear infinite}
+@keyframes gA2{0%{opacity:0.0}83.33%{opacity:0.0}83.89%{opacity:0.4}84.44%{opacity:0.79}85%{opacity:0.95}86.11%{opacity:0.95}86.67%{opacity:0.87}87.22%{opacity:0.79}87.78%{opacity:0.71}88.33%{opacity:0.63}88.89%{opacity:0.55}89.44%{opacity:0.48}90%{opacity:0.4}90.56%{opacity:0.32}91.11%{opacity:0.24}91.67%{opacity:0.16}92.22%{opacity:0.08}92.78%{opacity:0.0}100%{opacity:0.0}}
+.gA2{animation:gA2 9.0s linear infinite}
+@keyframes gA3{0%{opacity:0.0}78.89%{opacity:0.0}79.44%{opacity:0.4}80%{opacity:0.79}80.56%{opacity:0.95}81.67%{opacity:0.95}82.22%{opacity:0.87}82.78%{opacity:0.79}83.33%{opacity:0.71}83.89%{opacity:0.63}84.44%{opacity:0.55}85%{opacity:0.48}85.56%{opacity:0.4}86.11%{opacity:0.32}86.67%{opacity:0.24}87.22%{opacity:0.16}87.78%{opacity:0.08}88.33%{opacity:0.0}100%{opacity:0.0}}
+.gA3{animation:gA3 9.0s linear infinite}
+@keyframes gB0{0%{opacity:0.0}33.33%{opacity:0.0}33.89%{opacity:0.4}34.44%{opacity:0.79}35%{opacity:0.95}36.11%{opacity:0.95}36.67%{opacity:0.87}37.22%{opacity:0.79}37.78%{opacity:0.71}38.33%{opacity:0.63}38.89%{opacity:0.55}39.44%{opacity:0.48}40%{opacity:0.4}40.56%{opacity:0.32}41.11%{opacity:0.24}41.67%{opacity:0.16}42.22%{opacity:0.08}42.78%{opacity:0.0}100%{opacity:0.0}}
+.gB0{animation:gB0 9.0s linear infinite}
+@keyframes gB1{0%{opacity:0.0}50%{opacity:0.0}50.56%{opacity:0.4}51.11%{opacity:0.79}51.67%{opacity:0.95}52.78%{opacity:0.95}53.33%{opacity:0.87}53.89%{opacity:0.79}54.44%{opacity:0.71}55%{opacity:0.63}55.56%{opacity:0.55}56.11%{opacity:0.48}56.67%{opacity:0.4}57.22%{opacity:0.32}57.78%{opacity:0.24}58.33%{opacity:0.16}58.89%{opacity:0.08}59.44%{opacity:0.0}100%{opacity:0.0}}
+.gB1{animation:gB1 9.0s linear infinite}
+@keyframes gB2{0%{opacity:0.0}28.89%{opacity:0.0}29.44%{opacity:0.4}30%{opacity:0.79}30.56%{opacity:0.95}31.67%{opacity:0.95}32.22%{opacity:0.87}32.78%{opacity:0.79}33.33%{opacity:0.71}33.89%{opacity:0.63}34.44%{opacity:0.55}35%{opacity:0.48}35.56%{opacity:0.4}36.11%{opacity:0.32}36.67%{opacity:0.24}37.22%{opacity:0.16}37.78%{opacity:0.08}38.33%{opacity:0.0}100%{opacity:0.0}}
+.gB2{animation:gB2 9.0s linear infinite}
+@keyframes gB3{0%{opacity:0.0}45.56%{opacity:0.0}46.11%{opacity:0.4}46.67%{opacity:0.79}47.22%{opacity:0.95}48.33%{opacity:0.95}48.89%{opacity:0.87}49.44%{opacity:0.79}50%{opacity:0.71}50.56%{opacity:0.63}51.11%{opacity:0.55}51.67%{opacity:0.48}52.22%{opacity:0.4}52.78%{opacity:0.32}53.33%{opacity:0.24}53.89%{opacity:0.16}54.44%{opacity:0.08}55%{opacity:0.0}100%{opacity:0.0}}
+.gB3{animation:gB3 9.0s linear infinite}
+@keyframes gC0{0%{opacity:0.0}12.22%{opacity:0.0}12.78%{opacity:0.4}13.33%{opacity:0.79}13.89%{opacity:0.95}15%{opacity:0.95}15.56%{opacity:0.87}16.11%{opacity:0.79}16.67%{opacity:0.71}17.22%{opacity:0.63}17.78%{opacity:0.55}18.33%{opacity:0.47}18.89%{opacity:0.4}19.44%{opacity:0.32}20%{opacity:0.24}20.56%{opacity:0.16}21.11%{opacity:0.08}21.67%{opacity:0.0}100%{opacity:0.0}}
+.gC0{animation:gC0 9.0s linear infinite}
+@keyframes gC1{0%{opacity:0.0}16.67%{opacity:0.0}17.22%{opacity:0.4}17.78%{opacity:0.79}18.33%{opacity:0.95}19.44%{opacity:0.95}20%{opacity:0.87}20.56%{opacity:0.79}21.11%{opacity:0.71}21.67%{opacity:0.63}22.22%{opacity:0.55}22.78%{opacity:0.47}23.33%{opacity:0.4}23.89%{opacity:0.32}24.44%{opacity:0.24}25%{opacity:0.16}25.56%{opacity:0.08}26.11%{opacity:0.0}100%{opacity:0.0}}
+.gC1{animation:gC1 9.0s linear infinite}
+@keyframes gC2{0%{opacity:0.0}62.22%{opacity:0.0}62.78%{opacity:0.4}63.33%{opacity:0.79}63.89%{opacity:0.95}65%{opacity:0.95}65.56%{opacity:0.87}66.11%{opacity:0.79}66.67%{opacity:0.71}67.22%{opacity:0.63}67.78%{opacity:0.55}68.33%{opacity:0.48}68.89%{opacity:0.4}69.44%{opacity:0.32}70%{opacity:0.24}70.56%{opacity:0.16}71.11%{opacity:0.08}71.67%{opacity:0.0}100%{opacity:0.0}}
+.gC2{animation:gC2 9.0s linear infinite}
+@keyframes gC3{0%{opacity:0.0}66.67%{opacity:0.0}67.22%{opacity:0.4}67.78%{opacity:0.79}68.33%{opacity:0.95}69.44%{opacity:0.95}70%{opacity:0.87}70.56%{opacity:0.79}71.11%{opacity:0.71}71.67%{opacity:0.63}72.22%{opacity:0.55}72.78%{opacity:0.48}73.33%{opacity:0.4}73.89%{opacity:0.32}74.44%{opacity:0.24}75%{opacity:0.16}75.56%{opacity:0.08}76.11%{opacity:0.0}100%{opacity:0.0}}
+.gC3{animation:gC3 9.0s linear infinite}
+  </style>
 
   <rect width="1280" height="820" rx="34" fill="url(#bg)"/>
   <rect width="1280" height="820" rx="34" fill="url(#glow)"/>
@@ -61,17 +121,18 @@
     <rect x="190" y="258" width="820" height="132" rx="24"/>
   </g>
 
+  <g fill="none" stroke="url(#line)" stroke-width="2.4" stroke-linecap="round" opacity="0.8">
+    <path d="M265 374 405 280"/><path d="M265 374 641 280"/><path d="M265 374 877 280"/><path d="M505 374 405 280"/><path d="M505 374 641 280"/><path d="M505 374 877 280"/><path d="M745 374 405 280"/><path d="M745 374 641 280"/><path d="M745 374 877 280"/><path d="M985 374 405 280"/><path d="M985 374 641 280"/><path d="M985 374 877 280"/>
+  </g>
   <g fill="none" stroke="url(#line)" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M270 548 405 280"/>
-    <path d="M510 548 641 280"/>
-    <path d="M750 548 877 280"/>
-    <path d="M265 374 405 280"/>
-    <path d="M505 374 641 280"/>
-    <path d="M745 374 877 280"/>
-    <path d="M985 374 877 280"/>
     <path d="M265 456 270 548"/>
     <path d="M505 456 510 548"/>
     <path d="M745 456 750 548"/>
+  </g>
+
+  <g id="traffic">
+    <polyline class="trail t0" points="270,566 270,548 265,456 265,374 405,280 405,262 405,280 505,374 505,456 510,548 510,566" stroke="#7dd3fc"/><polyline class="trail t1" points="750,566 750,548 745,456 745,374 877,280 877,262 877,280 505,374 505,456 510,548 510,566" stroke="#5eead4"/><polyline class="trail t2" points="510,566 510,548 505,456 505,374 641,280 641,262 641,280 745,374 745,456 750,548 750,566" stroke="#7dd3fc"/><polyline class="trail t3" points="510,566 510,548 505,456 505,374 405,280 405,262 405,280 265,374 265,456 270,548 270,566" stroke="#5eead4"/><polyline class="trail t4" points="750,566 750,548 745,456 745,374 877,280 877,262 877,280 265,374 265,456 270,548 270,566" stroke="#7dd3fc"/><polyline class="trail t5" points="270,566 270,548 265,456 265,374 641,280 641,262 641,280 745,374 745,456 750,548 750,566" stroke="#5eead4"/>
+    <g class="pkt p0"><circle r="15" fill="#7dd3fc" opacity="0.25"/><circle r="7" fill="#7dd3fc"/><circle r="3" fill="#f0f9ff"/></g><g class="pkt p1"><circle r="15" fill="#5eead4" opacity="0.25"/><circle r="7" fill="#5eead4"/><circle r="3" fill="#f0f9ff"/></g><g class="pkt p2"><circle r="15" fill="#7dd3fc" opacity="0.25"/><circle r="7" fill="#7dd3fc"/><circle r="3" fill="#f0f9ff"/></g><g class="pkt p3"><circle r="15" fill="#5eead4" opacity="0.25"/><circle r="7" fill="#5eead4"/><circle r="3" fill="#f0f9ff"/></g><g class="pkt p4"><circle r="15" fill="#7dd3fc" opacity="0.25"/><circle r="7" fill="#7dd3fc"/><circle r="3" fill="#f0f9ff"/></g><g class="pkt p5"><circle r="15" fill="#5eead4" opacity="0.25"/><circle r="7" fill="#5eead4"/><circle r="3" fill="#f0f9ff"/></g>
   </g>
 
   <g filter="url(#shadow)">
@@ -105,19 +166,20 @@
       <rect x="424" y="536" width="172" height="104" rx="14" fill="url(#rack)" stroke="#334155"/>
       <rect x="664" y="536" width="172" height="104" rx="14" fill="url(#rack)" stroke="#334155"/>
       <g stroke="#475569" stroke-width="1">
-        <path d="M202 560h136M202 584h136M202 608h136"/>
-        <path d="M442 560h136M442 584h136M442 608h136"/>
-        <path d="M682 560h136M682 584h136M682 608h136"/>
+        <path d="M202 584h136M202 608h136"/>
+        <path d="M442 584h136M442 608h136"/>
+        <path d="M682 584h136M682 608h136"/>
       </g>
       <g fill="#22c55e">
-        <circle cx="216" cy="560" r="3"/><circle cx="216" cy="584" r="3"/><circle cx="216" cy="608" r="3"/>
-        <circle cx="456" cy="560" r="3"/><circle cx="456" cy="584" r="3"/><circle cx="456" cy="608" r="3"/>
-        <circle cx="696" cy="560" r="3"/><circle cx="696" cy="584" r="3"/><circle cx="696" cy="608" r="3"/>
+        <circle class="led" cx="216" cy="560" r="3"/><circle class="led led2" cx="216" cy="584" r="3"/><circle class="led led3" cx="216" cy="608" r="3"/>
+        <circle class="led led3" cx="456" cy="560" r="3"/><circle class="led" cx="456" cy="584" r="3"/><circle class="led led2" cx="456" cy="608" r="3"/>
+        <circle class="led led2" cx="696" cy="560" r="3"/><circle class="led led3" cx="696" cy="584" r="3"/><circle class="led" cx="696" cy="608" r="3"/>
       </g>
       <g fill="#38bdf8" opacity="0.8">
-        <rect x="244" y="552" width="72" height="16" rx="4"/>
-        <rect x="484" y="552" width="72" height="16" rx="4"/>
-        <rect x="724" y="552" width="72" height="16" rx="4"/>
+        <rect x="244" y="552" width="15" height="16" rx="3"/><rect x="263" y="552" width="15" height="16" rx="3"/><rect x="282" y="552" width="15" height="16" rx="3"/><rect x="301" y="552" width="15" height="16" rx="3"/><rect x="484" y="552" width="15" height="16" rx="3"/><rect x="503" y="552" width="15" height="16" rx="3"/><rect x="522" y="552" width="15" height="16" rx="3"/><rect x="541" y="552" width="15" height="16" rx="3"/><rect x="724" y="552" width="15" height="16" rx="3"/><rect x="743" y="552" width="15" height="16" rx="3"/><rect x="762" y="552" width="15" height="16" rx="3"/><rect x="781" y="552" width="15" height="16" rx="3"/>
+      </g>
+      <g>
+        <rect class="gflash gA0" x="244" y="552" width="15" height="16" rx="3"/><rect class="gflash gA1" x="263" y="552" width="15" height="16" rx="3"/><rect class="gflash gA2" x="282" y="552" width="15" height="16" rx="3"/><rect class="gflash gA3" x="301" y="552" width="15" height="16" rx="3"/><rect class="gflash gB0" x="484" y="552" width="15" height="16" rx="3"/><rect class="gflash gB1" x="503" y="552" width="15" height="16" rx="3"/><rect class="gflash gB2" x="522" y="552" width="15" height="16" rx="3"/><rect class="gflash gB3" x="541" y="552" width="15" height="16" rx="3"/><rect class="gflash gC0" x="724" y="552" width="15" height="16" rx="3"/><rect class="gflash gC1" x="743" y="552" width="15" height="16" rx="3"/><rect class="gflash gC2" x="762" y="552" width="15" height="16" rx="3"/><rect class="gflash gC3" x="781" y="552" width="15" height="16" rx="3"/>
       </g>
     </g>
 
