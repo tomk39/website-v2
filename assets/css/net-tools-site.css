@@ -1,0 +1,108 @@
+/* ==========================================================================
+   net_tools, fitted to this theme.
+   Loaded in _layouts/default.html after main.css, on every page.
+   It changes nothing on pages that have no tool and no dropdown.
+   ========================================================================== */
+
+/* 1. .page-shell already provides the 1240px width, the side gutter and the
+      vertical padding, so the tool must not add a second set of its own. */
+.page-shell .nt {
+  max-width: none;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+/* 2. The notes under a tool are page content, so main.css gives them the
+      850px reading column, centres it, and sets h2 to 1.9rem. Under a tool that
+      runs the full width of the shell, that reads as a different page: the text
+      is indented away from everything above it and the heading dwarfs the tool's
+      own. These rules align the notes with the tool and bring the type back to
+      the tool's scale. They are more specific than the .page-content rules they
+      override, so main.css needs no edit. */
+.page-shell .tool-notes {
+  max-width: none;
+  margin: 2.6rem 0 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.page-shell .tool-notes h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.page-shell .tool-notes p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted-strong);
+}
+
+/* One paragraph across the full width would run past 150 characters a line, so
+   it splits in two where there is room for both to stay readable. */
+@media (min-width: 56rem) {
+  .page-shell .tool-notes p {
+    columns: 2;
+    column-gap: clamp(2rem, 4vw, 3.5rem);
+  }
+}
+
+/* 3. main.css carries the full dropdown styling but switches it off with
+      ".nav-dropdown, .nav-dropdown-panel { display: none }". These two rules are
+      more specific, so they turn it back on without editing main.css. */
+.site-nav .nav-dropdown {
+  display: block;
+}
+.site-nav .nav-dropdown-panel {
+  display: grid;
+}
+
+/* 4. Inside the mobile menu the nav is already a panel, so the dropdown sits
+      inline and indented instead of floating over it. */
+@media (max-width: 1040px) {
+  .site-nav .nav-dropdown {
+    padding: 0;
+  }
+  .site-nav .nav-dropdown-panel {
+    position: static;
+    min-width: 0;
+    padding: 0 0 0 0.8rem;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+/* 5. The location badge sits at the top of a tool page, not in the header.
+      .header-inner has exactly as many columns as it has buttons, so a badge
+      there took its width from the nav: at 1174px that wrapped "Start Here" onto
+      two lines and still left the badge's own IP and city truncated. Here it is
+      on screen the moment a tool page loads and costs the nav nothing.
+
+      The negative bottom margin lets the tool's own hero keep its top spacing,
+      so the badge reads as sitting beside the eyebrow rather than above it. */
+.nt-geo-top {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.6rem;
+  margin-bottom: -2.4rem;
+}
+
+/* The panel would otherwise hang off the right edge of a narrow screen. */
+@media (max-width: 34rem) {
+  .nt-geo-top {
+    justify-content: flex-start;
+    margin-bottom: -1.2rem;
+  }
+
+  .nt-geo-top .nt-geo-pop {
+    right: auto;
+    left: 0;
+  }
+}

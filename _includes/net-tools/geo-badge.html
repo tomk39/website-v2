@@ -1,0 +1,11 @@
+{%- comment -%}
+  Visitor IP and country flag badge.
+
+  Only included on tool pages (the tool layout renders it), so no third-party
+  request is made from articles or any other page. nt-core.js, already loaded by the
+  tool layout, finds this element and fills it in.
+
+  It sits at the top of the tool page rather than in the header: .header-inner has
+  exactly as many columns as it has buttons, so a badge there took width from the nav.
+{%- endcomment -%}
+<div data-nt-geo></div>
