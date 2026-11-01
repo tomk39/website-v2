@@ -1,4 +1,5 @@
 ---
 layout: home
-title: Network Engineering Guides, Labs and Tools
+title: Technology Leadership & Architecture
+search_title: Tomislav Kranjec | Technology Leadership & Architecture
 ---

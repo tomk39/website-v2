@@ -1,18 +1,18 @@
 title: Tomislav Kranjec
-tagline: Network Engineering Guides, Labs & Tools
-description: Network engineering guides, labs and tools covering EVPN/VXLAN, Cisco ACI, Juniper, BGP, DNS, cloud connectivity, and enterprise networking.
+tagline: Technology Leadership & Architecture
+description: Technology leadership and infrastructure architecture across enterprise IT, networks, data centers, cloud, automation, and AI infrastructure.
 url: "https://tomislavk.blog"
 baseurl: ""
 permalink: /:categories/:title/
 timezone: Asia/Dubai
 logo: /android-chrome-512x512.png
-image: /assets/brand/social-card-v3.jpg
+image: /assets/brand/social-card-v4.jpg
 google_analytics: "G-5WNBNK6X00"
 
 author:
   name: Tomislav Kranjec
   url: "https://tomislavk.blog/about/"
-  description: Network engineering guides, labs, and field-tested design patterns.
+  description: Technology leadership and infrastructure architecture across enterprise IT, networks, data centers, cloud, automation, and AI infrastructure.
 
 social:
   name: Tomislav Kranjec
@@ -54,9 +54,9 @@ defaults:
     values:
       layout: page
       image:
-        path: /assets/brand/social-card-v3.jpg
+        path: /assets/brand/social-card-v4.jpg
         width: 1200
-        height: 627
+        height: 630
   - scope:
       path: "tools"
     values:

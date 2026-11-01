@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.tagline }}{% endif %}</title>
+    <title>{% if page.search_title %}{{ page.search_title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.tagline }}{% endif %}</title>
     {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
     {% seo title=false %}
     {% feed_meta %}
