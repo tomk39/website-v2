@@ -20,3 +20,7 @@ CLAUDE.md
 _drafts/
 _factory/
 
+
+# macOS
+.DS_Store
+._*
