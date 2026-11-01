@@ -11,6 +11,7 @@ layout: default
   Front matter each tool page must set:
     nt_tool    the tool id    (dns, subnet, email, whois, bgp, evpn)
     nt_script  the script file (dns-lens, subnet, email-check, whois, bgp, evpn)
+    nt_eyebrow the small label above the title, matching the one the tool draws
 {%- endcomment -%}
 
 <article class="page-shell">
@@ -21,7 +22,19 @@ layout: default
   {%- endcomment -%}
   <div class="nt-geo-top">{% include net-tools/geo-badge.html %}</div>
 
-  <div data-nt-tool="{{ page.nt_tool }}" data-pagefind-ignore></div>
+  {%- comment -%}
+    nt-core replaces this hero with the working tool. It is here so the heading and
+    introduction are in the HTML itself, for search engines and for anyone the
+    script does not reach.
+  {%- endcomment -%}
+  <div class="nt" data-nt-tool="{{ page.nt_tool }}" data-pagefind-ignore>
+    <header class="nt-hero">
+      <p class="nt-eyebrow">{{ page.nt_eyebrow | escape }}</p>
+      <h1>{{ page.title | escape }}</h1>
+      <p class="nt-lede">{{ page.description | escape }}</p>
+    </header>
+    <noscript><p class="nt-hint">This tool runs in your browser and needs JavaScript.</p></noscript>
+  </div>
 
   {%- if content != blank %}
   <div class="page-content tool-notes">
