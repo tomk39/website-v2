@@ -454,15 +454,15 @@ details.nt-raw pre{ max-height: 22rem; overflow: auto; font: .78rem/1.5 var(--nt
 .nt-theme[aria-pressed="true"] .nt-theme-thumb{ transform: translateX(1.3rem); }
 
 /* ---------- location badge (header, upper right) ---------- */
-.nt-geo{ position: relative; display: inline-block; font-family: var(--nt-font); }
+.nt-geo{ position: relative; display: inline-block; max-width: 100%; font-family: var(--nt-font); }
 .nt-geo-btn{
-  display: inline-flex; align-items: center; gap: .5rem; max-width: 22rem;
+  display: inline-flex; align-items: center; gap: .5rem; max-width: min(22rem, 100%);
   border: 1px solid var(--nt-line-2); background: var(--nt-surface); border-radius: 999px;
   padding: .32rem .75rem .32rem .45rem; font-size: .82rem; color: var(--nt-ink); line-height: 1.2;
 }
 .nt-geo-btn:hover{ border-color: var(--nt-accent); }
-.nt-geo-btn .ip{ font-family: var(--nt-mono); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 11rem; }
-.nt-geo-btn .place{ color: var(--nt-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 9rem; }
+.nt-geo-btn .ip{ flex: 0 1 auto; min-width: 0; font-family: var(--nt-mono); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 11rem; }
+.nt-geo-btn .place{ flex: 0 1 auto; min-width: 0; color: var(--nt-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 9rem; }
 /* a flag is 2:1, so cropping it to a circle hides the part that identifies it */
 .nt-geo-btn .nt-flag{ width: 1.4rem; height: 1.05rem; border-radius: 2px; }
 .nt-geo-btn .nt-geo-ph{ width: 1.3rem; height: 1.3rem; border-radius: 50%; background: var(--nt-surface-2); animation: nt-pulse 1s ease-in-out infinite; }
@@ -547,14 +547,14 @@ details.nt-raw pre{ max-height: 22rem; overflow: auto; font: .78rem/1.5 var(--nt
 /* The visitor's IP, at the top of a tool page. It used to sit in the shell
    header, where it took width from the tool nav. The negative bottom margin
    lets it share a line with the tool's own eyebrow. */
-.nt-geo-top{
+.nt-page .nt-geo-top{
   max-width: 1240px; margin: 0 auto -2.6rem;
   padding: 1.6rem clamp(16px, 2.5vw, 32px) 0;
   display: flex; justify-content: flex-end;
 }
-@media (max-width: 34rem){
-  .nt-geo-top{ justify-content: flex-start; margin-bottom: -1.4rem; }
-  .nt-geo-top .nt-geo-pop{ right: auto; left: 0; }
+@media (max-width: 860px){
+  .nt-page .nt-geo-top{ justify-content: flex-start; margin-bottom: .75rem; }
+  .nt-page .nt-geo-top .nt-geo-pop{ right: auto; left: 0; }
 }
 
 .nt-about{
@@ -593,4 +593,7 @@ details.nt-raw pre{ max-height: 22rem; overflow: auto; font: .78rem/1.5 var(--nt
   .nt-kv dt{ border-bottom: 0; padding-bottom: 0; }
   .nt-geo-btn .place{ display: none; }
   .nt-shell-end{ margin-left: 0; width: 100%; justify-content: space-between; }
+  /* two inputs and a button do not fit one row on a phone, so the VLANs get their own */
+  .nt-tenant{ grid-template-columns: minmax(0, 1fr) auto; }
+  .nt-tenant [data-f="vlans"]{ grid-column: 1 / -1; grid-row: 2; }
 }

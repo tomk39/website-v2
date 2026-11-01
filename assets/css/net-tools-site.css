@@ -94,11 +94,15 @@
   margin-bottom: -2.4rem;
 }
 
-/* The panel would otherwise hang off the right edge of a narrow screen. */
-@media (max-width: 34rem) {
+/* Once the hero stacks there is no free space beside the eyebrow, and a negative
+   margin puts the badge on top of it. So the badge takes its own line, and the
+   shell's top padding is all the space it needs above. The panel is anchored left
+   because it would otherwise hang off the right edge of a narrow screen. */
+@media (max-width: 860px) {
   .nt-geo-top {
     justify-content: flex-start;
-    margin-bottom: -1.2rem;
+    padding-top: 0;
+    margin-bottom: 0.75rem;
   }
 
   .nt-geo-top .nt-geo-pop {
