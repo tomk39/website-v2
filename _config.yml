@@ -54,6 +54,10 @@ defaults:
     values:
       layout: page
       image: /assets/brand/social-card.png
+  - scope:
+      path: "tools"
+    values:
+      image: /assets/brand/social-card-tools.png
 
 plugins:
   - jekyll-feed

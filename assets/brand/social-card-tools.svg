@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Network Tools by Tomislav Kranjec</title>
+  <desc id="desc">Free browser-based network tools for DNS, subnetting, email security, WHOIS, BGP and EVPN.</desc>
+  <defs>
+    <radialGradient id="halo" cx="82%" cy="40%" r="62%">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.5"/>
+      <stop offset="0.55" stop-color="#38bdf8" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1e3a8a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#halo)"/>
+  <rect width="10" height="630" fill="#38bdf8"/>
+  <image href="logo-mark.svg" x="72" y="60" width="84" height="84"/>
+  <text x="176" y="115" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1">tomislavk.blog</text>
+  <text x="72" y="282" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#f8fafc">Network</text>
+  <text x="72" y="382" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#f8fafc">Tools</text>
+  <text x="74" y="464" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">Free tools for network</text>
+  <text x="74" y="512" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">engineers</text>
+  <text x="74" y="574" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">Runs in your browser</text>
+  <g>
+    <rect x="630" y="126" width="220" height="108" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <text x="740" y="193.68" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc" text-anchor="middle">DNS</text>
+    <rect x="880" y="126" width="220" height="108" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <text x="990" y="193.68" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc" text-anchor="middle">Subnet</text>
+    <rect x="630" y="261" width="220" height="108" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <text x="740" y="328.68" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc" text-anchor="middle">Email</text>
+    <rect x="880" y="261" width="220" height="108" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <text x="990" y="328.68" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc" text-anchor="middle">WHOIS</text>
+    <rect x="630" y="396" width="220" height="108" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <text x="740" y="463.68" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc" text-anchor="middle">BGP</text>
+    <rect x="880" y="396" width="220" height="108" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <text x="990" y="463.68" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc" text-anchor="middle">EVPN</text>
+  </g>
+</svg>
