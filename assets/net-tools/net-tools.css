@@ -156,8 +156,8 @@ body.nt-page{
 .nt-textarea{ padding: .7rem .85rem; font-size: .9rem; line-height: 1.55; resize: vertical; min-height: 8rem; }
 
 /* .nt in the selector so the white text outranks the ".nt button" reset above.
-   The gradient ends on #0369a1, the site's accent, because white on the homepage
-   button's #0284c7 is only 4.1:1. */
+   The gradient matches .button.primary in main.css. It ends on #0369a1, the site's
+   accent, because white on a lighter blue such as #0284c7 is only 4.1:1. */
 .nt .nt-btn{
   border: 0; border-radius: var(--nt-radius); min-height: 3.2rem; padding: 0 1.5rem;
   font-weight: 700; font-size: .98rem; color: #fff;
