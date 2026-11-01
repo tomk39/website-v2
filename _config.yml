@@ -6,7 +6,7 @@ baseurl: ""
 permalink: /:categories/:title/
 timezone: Asia/Dubai
 logo: /android-chrome-512x512.png
-image: /assets/brand/social-card.png
+image: /assets/brand/social-card-v2.png
 google_analytics: "G-5WNBNK6X00"
 
 author:
@@ -53,11 +53,11 @@ defaults:
       path: ""
     values:
       layout: page
-      image: /assets/brand/social-card.png
+      image: /assets/brand/social-card-v2.png
   - scope:
       path: "tools"
     values:
-      image: /assets/brand/social-card-tools.png
+      image: /assets/brand/social-card-tools-v2.png
 
 plugins:
   - jekyll-feed

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Tomislav Kranjec</title>
-  <desc id="desc">AI infrastructure and data center networking articles, shown beside a spine and leaf fabric diagram.</desc>
+  <desc id="desc">Network engineering guides, labs and tools, shown beside a spine and leaf fabric diagram.</desc>
   <defs>
     <radialGradient id="halo" cx="82%" cy="40%" r="62%">
       <stop offset="0" stop-color="#2563eb" stop-opacity="0.5"/>
@@ -22,9 +22,9 @@
   <text x="176" y="115" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1">tomislavk.blog</text>
   <text x="72" y="282" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#f8fafc">Tomislav</text>
   <text x="72" y="382" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#f8fafc">Kranjec</text>
-  <text x="74" y="464" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">AI Infrastructure &amp;</text>
-  <text x="74" y="512" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">Data Center Networking</text>
-  <text x="74" y="574" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">EVPN  •  VXLAN  •  Cisco ACI</text>
+  <text x="74" y="464" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">Network Engineering</text>
+  <text x="74" y="512" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">Guides, Labs &amp; Tools</text>
+  <text x="74" y="574" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">EVPN  •  VXLAN  •  Cisco ACI  •  Juniper  •  BGP  •  DNS</text>
   <g fill="none" stroke="#7dd3fc" stroke-width="4">
     <path d="M790 215L700 385"/>
     <path d="M790 215L835 385"/>
