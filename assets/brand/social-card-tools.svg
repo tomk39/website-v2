@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" role="img" aria-labelledby="title desc">
   <title id="title">Network Tools by Tomislav Kranjec</title>
   <desc id="desc">Free browser-based network tools for DNS, subnetting, email security, WHOIS, BGP and EVPN.</desc>
   <defs>
@@ -19,12 +19,11 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#halo)"/>
   <image href="logo-mark.svg" x="72" y="60" width="84" height="84"/>
-  <text x="176" y="115" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1">tomislavk.blog</text>
-  <text x="72" y="282" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#f8fafc">Network</text>
-  <text x="72" y="382" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#f8fafc">Tools</text>
-  <text x="74" y="464" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">Free tools for network</text>
-  <text x="74" y="512" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">engineers</text>
-  <text x="74" y="574" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">Runs in your browser</text>
+  <text x="176" y="115" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="600" fill="#cbd5e1">tomislavk.blog</text>
+  <text x="72" y="270" font-family="Inter, Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="-2" fill="#f8fafc">Network</text>
+  <text x="72" y="378" font-family="Inter, Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="-2" fill="#f8fafc">Tools</text>
+  <text x="74" y="472" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700" fill="#7dd3fc">Free tools for network</text>
+  <text x="74" y="530" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700" fill="#7dd3fc">engineers</text>
   <g>
     <rect x="630" y="126" width="220" height="108" rx="12" fill="url(#node)" stroke="#7dd3fc" stroke-width="4"/>
     <text x="740" y="193.68" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc" text-anchor="middle">DNS</text>

@@ -1,18 +1,18 @@
 title: Tomislav Kranjec
-tagline: AI Infrastructure & Data Center Networking
-description: Engineering insights on AI infrastructure, data center fabrics, EVPN/VXLAN, cloud connectivity, service provider, and enterprise networking.
+tagline: Network Engineering Guides, Labs & Tools
+description: Network engineering guides, labs and tools covering EVPN/VXLAN, Cisco ACI, Juniper, BGP, DNS, cloud connectivity, and enterprise networking.
 url: "https://tomislavk.blog"
 baseurl: ""
 permalink: /:categories/:title/
 timezone: Asia/Dubai
 logo: /android-chrome-512x512.png
-image: /assets/brand/social-card-v2.png
+image: /assets/brand/social-card-v3.jpg
 google_analytics: "G-5WNBNK6X00"
 
 author:
   name: Tomislav Kranjec
   url: "https://tomislavk.blog/about/"
-  description: AI infrastructure and data center networking notes, labs, and field-tested design patterns.
+  description: Network engineering guides, labs, and field-tested design patterns.
 
 social:
   name: Tomislav Kranjec
@@ -53,11 +53,17 @@ defaults:
       path: ""
     values:
       layout: page
-      image: /assets/brand/social-card-v2.png
+      image:
+        path: /assets/brand/social-card-v3.jpg
+        width: 1200
+        height: 627
   - scope:
       path: "tools"
     values:
-      image: /assets/brand/social-card-tools-v2.png
+      image:
+        path: /assets/brand/social-card-tools-v3.jpg
+        width: 1200
+        height: 627
 
 plugins:
   - jekyll-feed
