@@ -5,6 +5,7 @@ description: "Build a five-router lab on a single Juniper SRX 100 in 15 minutes 
 categories: ["Juniper"]
 tags: [srx, lab,]
 image: /images/juniper_virtlab/1.png
+image_webp: /images/juniper_virtlab/1.webp
 ---
 
 In this post, we’ll show you exactly how to deploy a fully connected 5-router topology in less than 15 minutes. 

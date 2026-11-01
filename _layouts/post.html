@@ -33,7 +33,7 @@ layout: default
   </header>
 
   {% if page.image %}
-    <img class="article-cover" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+    {% include post-image.html src=page.image webp=page.image_webp class="article-cover" alt=page.title %}
   {% endif %}
 
   <div class="article-layout">

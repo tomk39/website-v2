@@ -4,6 +4,7 @@ description: "Walk through Cisco APIC initial setup on the ACI Simulator: first-
 categories: ["ACI"]
 tags: [aci, fabric, leaf, spine]
 image: /images/acisim_init_conf/subject.jpg
+image_webp: /images/acisim_init_conf/subject.webp
 ---
 
 <p style='text-align: justify;'>

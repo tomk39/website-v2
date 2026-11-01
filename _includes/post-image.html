@@ -1,0 +1,9 @@
+{%- comment -%}
+  A post's cover image. The original stays in `image` because that is also the
+  social preview, where WebP is not safe everywhere; `image_webp` is the lighter
+  copy for browsers.
+{%- endcomment -%}
+<picture>
+  {%- if include.webp %}<source srcset="{{ include.webp | relative_url }}" type="image/webp">{% endif -%}
+  <img{% if include.class %} class="{{ include.class }}"{% endif %} src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}"{% if include.lazy %} loading="lazy"{% endif %}>
+</picture>

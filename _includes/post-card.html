@@ -1,7 +1,8 @@
 {% assign post = include.post %}
 <article class="post-card">
   <a class="post-image-link" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">
-    <img src="{{ post.image | default: '/assets/images/topology-lab.svg' | relative_url }}" alt="">
+    {% assign card_image = post.image | default: '/assets/images/topology-lab.svg' %}
+    {% include post-image.html src=card_image webp=post.image_webp alt="" lazy=true %}
   </a>
   <div class="post-card-body">
     <div class="post-tags">

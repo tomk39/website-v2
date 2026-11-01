@@ -4,6 +4,7 @@ description: "Day 1 Cisco ACI configuration from the APIC GUI: provision fabric 
 categories: ["ACI"]
 tags: [aci, fabric, apic, leaf, spine]
 image: /images/apic_day_0_config/apic.jpg
+image_webp: /images/apic_day_0_config/apic.webp
 ---
 
 ## Cisco APIC Initial Configuration and Fabric Provisioning
