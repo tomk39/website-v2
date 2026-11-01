@@ -155,10 +155,13 @@ body.nt-page{
 .nt-select{ width: auto; padding: 0 .8rem; min-height: 3.2rem; font-family: var(--nt-font); font-size: .92rem; font-weight: 500; }
 .nt-textarea{ padding: .7rem .85rem; font-size: .9rem; line-height: 1.55; resize: vertical; min-height: 8rem; }
 
-.nt-btn{
+/* .nt in the selector so the white text outranks the ".nt button" reset above.
+   The gradient ends on #0369a1, the site's accent, because white on the homepage
+   button's #0284c7 is only 4.1:1. */
+.nt .nt-btn{
   border: 0; border-radius: var(--nt-radius); min-height: 3.2rem; padding: 0 1.5rem;
   font-weight: 700; font-size: .98rem; color: #fff;
-  background: linear-gradient(135deg, #2563eb, #0284c7);
+  background: linear-gradient(135deg, var(--nt-accent-deep), #0369a1);
   box-shadow: 0 10px 28px rgba(37, 99, 235, .28);
   transition: transform .12s ease, filter .15s ease;
 }

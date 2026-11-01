@@ -162,13 +162,13 @@ If you struggling or you have some doubts about compatibility between switches a
 </p>
 
 <p>
-<iframe width="420" height="315"
+<iframe width="420" height="315" style="max-width: 100%; height: auto; aspect-ratio: 4 / 3;"
 src="https://www.youtube.com/embed/5I19ePqzNhc?controls=0">
 </iframe>
 </p>
 
 <p>
-<iframe width="420" height="315"
+<iframe width="420" height="315" style="max-width: 100%; height: auto; aspect-ratio: 4 / 3;"
 src="https://www.youtube.com/embed/FFhNGxmniR4?controls=0">
 </iframe>  
 </p>

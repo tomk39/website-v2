@@ -49,7 +49,8 @@ When APIC login page appear for User ID use **admin** and for password use note 
 <img class="center" width="800" height="400" src="/images/acisim_init_conf/login_screen1.jpg" alt="Login" title="Login">  
 
 
-Final Part 2 coming soon! Are you enjoyed reading? If yes please subscribe **<a href="/subscribe/index.html" target="_blank">Here</a>**
+**Next in this series:** [Cisco ACI Fabric - APIC Day 1 configuration](/aci/aci-apic-initial-setup/)
+
 
 
 <head>

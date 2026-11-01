@@ -143,6 +143,7 @@ a:hover {
   display: inline-flex;
   gap: 0.8rem;
   align-items: center;
+  min-width: 0;
   color: var(--ink);
   text-decoration: none;
 }
@@ -167,6 +168,7 @@ a:hover {
 .brand-copy {
   display: grid;
   gap: 0.1rem;
+  min-width: 0;
 }
 
 .brand small {
@@ -1026,11 +1028,10 @@ a:hover {
   padding: 0;
 }
 
-/* Premium technical tables */
+/* Premium technical tables. The wrapper only exists to scroll on narrow screens,
+   so above that it adds no box and the table lays out as if it were not there. */
 .table-wrap {
-  width: 100%;
-  overflow-x: auto;
-  margin: 2rem 0;
+  display: contents;
 }
 
 .article-content table,
@@ -1499,5 +1500,87 @@ a:hover {
   .clean-list li {
     display: grid;
     justify-content: start;
+  }
+}
+
+/* The smallest phones cannot fit the logo, the name and three buttons at full
+   size, so the spacing tightens and the name takes less room. */
+@media (max-width: 420px) {
+  .header-inner {
+    gap: 0.5rem;
+  }
+
+  .brand {
+    gap: 0.5rem;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand strong {
+    font-size: 0.92rem;
+    line-height: 1.1;
+  }
+
+  .theme-toggle {
+    width: 54px;
+  }
+}
+
+/* Folded phones: the name matters more than the logo beside it. */
+@media (max-width: 300px) {
+  .brand-mark {
+    display: none;
+  }
+}
+
+/* The 680px table minimum only suits a column wider than that. On narrow screens
+   a table fits the column where its words allow, and otherwise scrolls inside its
+   wrapper rather than pushing the page sideways. Code in a cell may break, since a
+   long command would otherwise hold the table wide on its own. */
+@media (max-width: 760px) {
+  .table-wrap {
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .article-content table,
+  .page-content table,
+  .table-wrap table {
+    min-width: 0;
+  }
+
+  .article-content table code,
+  .page-content table code,
+  .table-wrap code {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Cell padding would take a third of a phone's width from the text. The title
+   shrinks with the screen so a long word such as "Understanding" still fits. */
+@media (max-width: 420px) {
+  .article-header h1 {
+    font-size: clamp(1.85rem, 10.5vw, 2.45rem);
+    overflow-wrap: break-word;
+  }
+
+  .article-content table,
+  .page-content table,
+  .table-wrap table {
+    font-size: 0.88rem;
+  }
+
+  .article-content th,
+  .article-content td,
+  .page-content th,
+  .page-content td,
+  .table-wrap th,
+  .table-wrap td {
+    padding: 0.65rem 0.7rem;
   }
 }
