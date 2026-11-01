@@ -18,7 +18,6 @@
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#halo)"/>
-  <rect width="10" height="630" fill="#38bdf8"/>
   <image href="logo-mark.svg" x="72" y="60" width="84" height="84"/>
   <text x="176" y="115" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1">tomislavk.blog</text>
   <text x="72" y="282" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#f8fafc">Tomislav</text>
@@ -26,7 +25,7 @@
   <text x="74" y="464" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">AI Infrastructure &amp;</text>
   <text x="74" y="512" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#7dd3fc">Data Center Networking</text>
   <text x="74" y="574" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">EVPN  •  VXLAN  •  Cisco ACI</text>
-  <g fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.7">
+  <g fill="none" stroke="#7dd3fc" stroke-width="4">
     <path d="M790 215L700 385"/>
     <path d="M790 215L835 385"/>
     <path d="M790 215L965 385"/>
@@ -37,17 +36,17 @@
     <path d="M1010 215L1100 385"/>
   </g>
   <g>
-    <rect x="715" y="135" width="150" height="80" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="715" y="135" width="150" height="80" rx="12" fill="url(#node)" stroke="#7dd3fc" stroke-width="4"/>
     <text x="790" y="184.36" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#f8fafc" text-anchor="middle">SPINE</text>
-    <rect x="935" y="135" width="150" height="80" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="935" y="135" width="150" height="80" rx="12" fill="url(#node)" stroke="#7dd3fc" stroke-width="4"/>
     <text x="1010" y="184.36" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#f8fafc" text-anchor="middle">SPINE</text>
-    <rect x="644" y="385" width="112" height="80" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="644" y="385" width="112" height="80" rx="12" fill="url(#node)" stroke="#7dd3fc" stroke-width="4"/>
     <text x="700" y="433.64" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc" text-anchor="middle">LEAF</text>
-    <rect x="779" y="385" width="112" height="80" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="779" y="385" width="112" height="80" rx="12" fill="url(#node)" stroke="#7dd3fc" stroke-width="4"/>
     <text x="835" y="433.64" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc" text-anchor="middle">LEAF</text>
-    <rect x="909" y="385" width="112" height="80" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="909" y="385" width="112" height="80" rx="12" fill="url(#node)" stroke="#7dd3fc" stroke-width="4"/>
     <text x="965" y="433.64" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc" text-anchor="middle">LEAF</text>
-    <rect x="1044" y="385" width="112" height="80" rx="12" fill="url(#node)" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="1044" y="385" width="112" height="80" rx="12" fill="url(#node)" stroke="#7dd3fc" stroke-width="4"/>
     <text x="1100" y="433.64" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc" text-anchor="middle">LEAF</text>
   </g>
 </svg>
