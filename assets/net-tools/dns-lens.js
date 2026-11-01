@@ -283,7 +283,7 @@ NT.register("dns", function (root) {
   }));
 
   resolverSel.value = NT.store.get("dns-resolver", "cf");
-  input.value = NT.query() || "cloudflare.com";
+  input.value = NT.query();
   updateDig();
-  run();
+  if (input.value) run();
 });

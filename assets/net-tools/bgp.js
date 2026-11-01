@@ -211,6 +211,6 @@ NT.register("bgp", function (root) {
   }
 
   form.addEventListener("submit", (e) => { e.preventDefault(); run(); });
-  input.value = NT.query() || "1.1.1.0/24";
-  run();
+  input.value = NT.query();
+  if (input.value) run();
 });

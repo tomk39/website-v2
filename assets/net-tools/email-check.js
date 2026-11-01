@@ -417,6 +417,6 @@ NT.register("email", function (root) {
     btn.disabled = false; btn.textContent = "Check domain";
   }
   form.addEventListener("submit", (e) => { e.preventDefault(); run(); });
-  input.value = NT.query() || "google.com";
-  run();
+  input.value = NT.query();
+  if (input.value) run();
 });

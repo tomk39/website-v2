@@ -262,7 +262,10 @@
         if (h) item.style.gridRowEnd = "span " + Math.max(1, Math.ceil((h + gap) / (ROW + gap)));
       });
 
-      if (!balance || spanning || cols < 2 || items.length <= cols) {
+      // Cards of nearly equal height have nothing to balance, and sorting them by height would shuffle
+      // the order just because one title wrapped. That is every card before the first lookup.
+      const even = Math.max(...heights) - Math.min(...heights) < 48;
+      if (!balance || spanning || even || cols < 2 || items.length <= cols) {
         items.forEach((item) => (item.style.gridColumn = ""));
         return;
       }

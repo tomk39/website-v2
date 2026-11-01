@@ -339,6 +339,6 @@ NT.register("whois", function (root) {
     else lookupDomain(x.d);
   }
   form.addEventListener("submit", (e) => { e.preventDefault(); run(); });
-  input.value = NT.query() || "wikipedia.org";
-  run();
+  input.value = NT.query();
+  if (input.value) run();
 });

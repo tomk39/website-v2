@@ -159,14 +159,7 @@ NT.register("subnet", function (root) {
       <div class="nt-split">
         <div class="nt-panel">
           <p class="nt-section-title"><label for="nt-sub-list">Networks to summarise</label></p>
-          <textarea class="nt-textarea" id="nt-sub-list" spellcheck="false" rows="9" placeholder="One network per line">10.0.0.0/24
-10.0.1.0/24
-10.0.2.0/23
-10.0.4.0/22
-192.168.1.0/25
-192.168.1.128/25
-2001:db8:0:0::/64
-2001:db8:0:1::/64</textarea>
+          <textarea class="nt-textarea" id="nt-sub-list" spellcheck="false" rows="9" placeholder="One network per line"></textarea>
           <div class="nt-row" style="margin-top:.7rem"><button class="nt-btn" type="button" data-act="merge">Summarise</button></div>
         </div>
         <div class="nt-panel" data-slot="merge-out"></div>
@@ -176,9 +169,9 @@ NT.register("subnet", function (root) {
       <div class="nt-split">
         <form class="nt-panel" data-form="range" autocomplete="off">
           <label class="nt-label" for="nt-sub-from">First address</label>
-          <input class="nt-input nt-sm" id="nt-sub-from" type="text" spellcheck="false" value="192.168.0.10">
+          <input class="nt-input nt-sm" id="nt-sub-from" type="text" spellcheck="false" placeholder="192.168.0.10">
           <label class="nt-label" for="nt-sub-to" style="margin-top:.8rem">Last address</label>
-          <input class="nt-input nt-sm" id="nt-sub-to" type="text" spellcheck="false" value="192.168.1.77">
+          <input class="nt-input nt-sm" id="nt-sub-to" type="text" spellcheck="false" placeholder="192.168.1.77">
           <div class="nt-row" style="margin-top:.8rem"><button class="nt-btn" type="submit">Convert to CIDR</button></div>
         </form>
         <div class="nt-panel" data-slot="range-out"></div>
@@ -356,7 +349,9 @@ NT.register("subnet", function (root) {
   /* ---------- range to CIDR ---------- */
   function range() {
     const outEl = $(root, "[data-slot=range-out]");
-    const a = parseAddr($(root, "#nt-sub-from").value), b = parseAddr($(root, "#nt-sub-to").value);
+    const from = $(root, "#nt-sub-from").value, to = $(root, "#nt-sub-to").value;
+    if (!from.trim() && !to.trim()) { outEl.innerHTML = `<div class="nt-empty">Enter a first and last address on the left.</div>`; return; }
+    const a = parseAddr(from), b = parseAddr(to);
     if (!a || !b) { outEl.innerHTML = NT.msg("err", "Enter two valid addresses.", "Both must be IPv4, or both IPv6."); return; }
     if (a.v !== b.v) { outEl.innerHTML = NT.msg("err", "The two addresses are from different families.", "Use two IPv4 or two IPv6 addresses."); return; }
     let [s, e] = [a.n, b.n];
@@ -384,6 +379,7 @@ NT.register("subnet", function (root) {
     if (!fromSlider) NT.setQuery(input.value.trim());
   }
   slider.addEventListener("input", () => {
+    if (!input.value.trim()) { out.textContent = "/" + slider.value; return; }
     const x = parseNet(input.value);
     const addr = x.error ? input.value.split(/[\/ ]/)[0] : fmt(x.n, x.v);
     input.value = `${addr}/${slider.value}`;
@@ -400,8 +396,12 @@ NT.register("subnet", function (root) {
     NT.store.set("subnet-tab", t.dataset.tab);
   }));
 
-  input.value = NT.query() || "192.168.10.77/26";
-  calc();
+  input.value = NT.query();
+  if (input.value) calc();
+  else {
+    panes.details.innerHTML = `<div class="nt-empty">Enter an address above to see its details.</div>`;
+    panes.split.innerHTML = `<div class="nt-empty">Enter a network above to split it into subnets.</div>`;
+  }
   merge();
   range();
   const tab = NT.store.get("subnet-tab", "details");
