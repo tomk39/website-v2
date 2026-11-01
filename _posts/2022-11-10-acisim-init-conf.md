@@ -1,5 +1,6 @@
 ---
 title: Cisco ACI Simulator APIC Initial setup
+description: "Walk through Cisco APIC initial setup on the ACI Simulator: first-boot dialog, initial deployment and fabric initialization, with its data plane limits."
 categories: ["ACI"]
 tags: [aci, fabric, leaf, spine]
 image: /images/acisim_init_conf/subject.jpg

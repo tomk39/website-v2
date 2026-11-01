@@ -2,6 +2,8 @@
 layout: page
 title: Search
 permalink: /search/
+noindex: true
+sitemap: false
 description: Search technical notes, labs, categories, and downloads.
 ---
 

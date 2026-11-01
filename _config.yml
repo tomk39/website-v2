@@ -1,18 +1,23 @@
 title: Tomislav Kranjec
+tagline: AI Infrastructure & Data Center Networking
 description: Engineering insights on AI infrastructure, data center fabrics, EVPN/VXLAN, cloud connectivity, service provider, and enterprise networking.
 url: "https://tomislavk.blog"
 baseurl: ""
 permalink: /:categories/:title/
 timezone: Asia/Dubai
-logo: /assets/brand/logo-mark.svg
-image: /assets/brand/social-card.svg
+logo: /android-chrome-512x512.png
+image: /assets/brand/social-card.png
 google_analytics: "G-5WNBNK6X00"
 
 author:
   name: Tomislav Kranjec
+  url: "https://tomislavk.blog/about/"
   description: AI infrastructure and data center networking notes, labs, and field-tested design patterns.
 
 social:
+  name: Tomislav Kranjec
+  links:
+    - "https://linkedin.com/in/tkranjec"
   linkedin: "https://linkedin.com/in/tkranjec"
 #  x: "https://x.com/"
 #  youtube: "https://www.youtube.com/"
@@ -48,14 +53,22 @@ defaults:
       path: ""
     values:
       layout: page
+      image: /assets/brand/social-card.png
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - preview
   - package.json
+  - package-lock.json
   - README.md
   - node_modules
   - CLAUDE.md
+  - example_posts
+  - scripts
+  - build.sh
+  - dev.sh
+  - "*_old"

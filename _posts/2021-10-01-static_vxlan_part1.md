@@ -1,5 +1,6 @@
 ---
 title: Five easy steps to configure static VxLAN Part 1
+description: "Build a static VxLAN tunnel between two Linux hosts, without multicast or EVPN. Part 1 covers VxLAN basics and a hands-on Linux configuration."
 categories: [VXLAN]
 tags: [vxlan, linux, networking]
 image: /images/static_vxlan/vxlan_tunnel.jpg

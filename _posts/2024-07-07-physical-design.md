@@ -1,5 +1,6 @@
 ---
 title: Mastering Cisco ACI Physical Design
+description: "Cisco ACI physical design explained: Clos topology, the roles of leaf, spine and FEX switches, and how to choose a two-tier or multi-tier fabric."
 categories: ["ACI"]
 tags: [aci, fabric, leaf, spine]
 image: /images/phy_design/2.png

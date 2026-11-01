@@ -1,5 +1,6 @@
 ---
 title: How to run Cisco ACI Simulator on KVM host
+description: "Cisco does not support the ACI Simulator on KVM, so here is the experiment: convert the VMDK image and run ACISIM on Ubuntu with reduced resources."
 categories: ["ACI"]
 tags: [aci, fabric, virtualization]
 image: /images/acisim_on_kvm/subject.jpg

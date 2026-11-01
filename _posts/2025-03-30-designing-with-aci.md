@@ -1,5 +1,6 @@
 ---
 title: Designing with Cisco ACI
+description: "Compare Cisco ACI deployment models: single pod, remote leaf, ACI Mini, Multi-Pod over IPN or back to back, Multi-Site and hybrid designs."
 categories: ["ACI"]
 tags: [aci, fabric, leaf, spine]
 image: /images/designing_with_aci/1.gif

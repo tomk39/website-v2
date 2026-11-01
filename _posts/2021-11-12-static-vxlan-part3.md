@@ -1,5 +1,6 @@
 ---
 title: Five easy steps to configure static VxLAN Part 3 
+description: "Use a Nvidia Cumulus VX switch as a data center edge gateway between underlay and overlay, with static VxLAN tunnels to two Linux hosts."
 categories: [VXLAN]
 tags: [vxlan, linux, networking]
 image: /images/static_vxlan/vxlan_tunnel3.jpg

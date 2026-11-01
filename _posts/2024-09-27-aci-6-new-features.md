@@ -1,5 +1,6 @@
 ---
 title: Unlocking the Power of Cisco ACI 6.0
+description: "What is new in Cisco ACI 6.0: Virtual APIC on ESXi and cloud, VMM integration with Nutanix AHV, and Nexus Dashboard connectivity analysis."
 categories: ["ACI"]
 tags: [aci, fabric, leaf, spine]
 image: /images/aci_6_new_features/1.png

@@ -1,5 +1,6 @@
 ---
 title: Five easy steps to configure static VxLAN Part 2 
+description: "Connect a physical DB server to an application VM over static VxLAN, using a Nvidia Cumulus VX switch as the VTEP and a Linux host on KVM."
 categories: [VXLAN]
 tags: [vxlan, linux, networking]
 image: /images/static_vxlan/vxlan_tunnel2.jpg

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Cisco ACI's Core Building Blocks: Tenants to EPGs Explained"
+description: "Cisco ACI's building blocks explained: tenants, VRFs, bridge domains, application profiles, EPGs and Endpoint Security Groups."
 categories: ["ACI"]
 tags: [aci, fabric, leaf, spine]
 image: /images/aci_building_blocks/1.png

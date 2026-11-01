@@ -1,5 +1,6 @@
 ---
 title: "Understanding Cisco ACI Access Policies: A Practical Guide"
+description: "A practical guide to Cisco ACI access policies, with the end-to-end workflow for leaf access ports, port channels and virtual port channels."
 categories: ["ACI"]
 tags: [aci, fabric, leaf, spine]
 image: /images/aci_access_polices/1.gif

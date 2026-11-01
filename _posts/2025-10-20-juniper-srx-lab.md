@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Deploy a 5-Router Lab in 15 Minutes on Juniper SRX 100"
+description: "Build a five-router lab on a single Juniper SRX 100 in 15 minutes by looping two ports, enabling packet mode and using virtual router instances."
 categories: ["Juniper"]
 tags: [srx, lab,]
 image: /images/juniper_virtlab/1.png

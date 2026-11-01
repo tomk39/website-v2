@@ -1,5 +1,6 @@
 ---
 title: "Understanding Contracts in Cisco ACI: The Backbone of Network Security"
+description: "How Cisco ACI contracts secure traffic: standard and taboo contracts, vzAny, preferred groups and unenforced VRFs, and when to use each."
 categories: ["Cisco ACI"]
 tags: [aci, fabric, leaf, spine]
 image: /images/aci_contracts/1.png

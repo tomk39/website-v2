@@ -1,5 +1,6 @@
 ---
 title: Cisco ACI Fabric - APIC Day 1 configuration
+description: "Day 1 Cisco ACI configuration from the APIC GUI: provision fabric switches, then set up NTP, DNS and BGP route reflectors, step by step."
 categories: ["ACI"]
 tags: [aci, fabric, apic, leaf, spine]
 image: /images/apic_day_0_config/apic.jpg

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Five easy steps to configure static VxLAN Part 4 
+description: "Extend a Layer 2 domain between data centers with static VxLAN between Cumulus Linux VX and Juniper vMX gateways, using OSPF in the underlay."
 categories: [VXLAN]
 tags: [vxlan, linux, networking]
 image: /images/static_vxlan/vxlan_tunnel4.jpg
