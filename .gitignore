@@ -13,6 +13,7 @@ _site/
 vendor/
 
 # Claude factory — local only, not needed by the website
+HANDOFF.md
 CLAUDE.md
 .claude/
 .env
