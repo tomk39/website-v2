@@ -60,20 +60,6 @@
   line-height: 1.35;
 }
 
-/* 2b. A page that sets "wide: true" (the tools index) runs its heading, intro
-       and content across the whole shell like the tool pages do, instead of
-       sitting in the 850px reading column. Nothing else uses page-shell-wide. */
-.page-shell-wide .page-header,
-.page-shell-wide .page-content {
-  max-width: none;
-  margin-inline: 0;
-}
-
-.page-shell-wide .page-header h1,
-.page-shell-wide .page-header p {
-  max-width: none;
-}
-
 /* 3. main.css carries the full dropdown styling but switches it off with
       ".nav-dropdown, .nav-dropdown-panel { display: none }". These two rules are
       more specific, so they turn it back on without editing main.css. */
