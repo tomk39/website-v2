@@ -52,13 +52,13 @@
   line-height: 1.35;
 }
 
-/* One paragraph across the full width would run past 150 characters a line, so
-   it splits in two where there is room for both to stay readable. */
-@media (min-width: 56rem) {
-  .page-shell .tool-notes h2 + p {
-    columns: 2;
-    column-gap: clamp(2rem, 4vw, 3.5rem);
-  }
+/* Both blocks, the About paragraph and the Common questions, share one
+   reading measure. Full width ran past 150 characters a line, and splitting
+   only the About paragraph into columns made the two blocks look unrelated. */
+.page-shell .tool-notes h2,
+.page-shell .tool-notes h3,
+.page-shell .tool-notes p {
+  max-width: 75ch;
 }
 
 /* 3. main.css carries the full dropdown styling but switches it off with

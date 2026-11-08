@@ -367,6 +367,55 @@ a:hover {
   background: var(--ink);
 }
 
+/* Sun and moon say what the switch does. The two at the ends of the track show
+   both modes; the one on the knob is the mode the page is in now. */
+.theme-icon {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-icon-track {
+  position: absolute;
+  top: 7px;
+  color: var(--muted);
+}
+
+.theme-icon-track.theme-icon-sun {
+  left: 7px;
+}
+
+.theme-icon-track.theme-icon-moon {
+  right: 7px;
+}
+
+.theme-toggle-thumb {
+  display: grid;
+  place-items: center;
+  color: var(--surface);
+}
+
+.theme-toggle-thumb .theme-icon {
+  grid-area: 1 / 1;
+  width: 13px;
+  height: 13px;
+}
+
+/* Light mode: knob on the left over the sun. Dark mode: knob on the right over the moon. */
+.theme-toggle[aria-pressed="true"] .theme-toggle-thumb .theme-icon-sun,
+.theme-toggle[aria-pressed="false"] .theme-toggle-thumb .theme-icon-moon {
+  display: none;
+}
+
+.theme-toggle[aria-pressed="true"] .theme-icon-track.theme-icon-moon,
+.theme-toggle[aria-pressed="false"] .theme-icon-track.theme-icon-sun {
+  visibility: hidden;
+}
+
 .home-hero {
   min-height: 570px;
   display: grid;
