@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="page-shell">
+<article class="page-shell{% if page.wide %} page-shell-wide{% endif %}">
   <header class="page-header">
     <p class="eyebrow">{{ site.tagline }}</p>
     <h1>{{ page.title }}</h1>

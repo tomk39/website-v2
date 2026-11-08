@@ -2,6 +2,7 @@
 layout: page
 title: Network Tools
 permalink: /tools/
+wide: true
 description: Lookup tools and calculators for network engineers - DNS, subnetting, email authentication, WHOIS, BGP routing and EVPN - that run entirely in your browser.
 ---
 

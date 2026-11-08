@@ -10,7 +10,7 @@ nt_script: subnet
 
 ## About this subnet calculator
 
-sipcalc's fields for IPv4 and IPv6: network and broadcast address, every mask notation, the Cisco wildcard, usable range, address type and reverse DNS zone, with a prefix slider that updates them live. Further tabs split a block into equal subnets, summarise a list of networks, and turn a range into CIDR blocks. A /31 has two usable addresses, per RFC 3021. Nothing leaves your browser.
+Sipcalc's fields for IPv4 and IPv6: network and broadcast address, every mask notation, the Cisco wildcard, usable range, address type and reverse DNS zone, with a prefix slider that updates them live. Further tabs split a block into equal subnets, summarise a list of networks, and turn a range into CIDR blocks. A /31 has two usable addresses, per RFC 3021. Nothing leaves your browser.
 
 ## Common questions
 

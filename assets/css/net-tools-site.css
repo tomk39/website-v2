@@ -12,6 +12,14 @@
   padding-block: 0;
 }
 
+/* 1b. net-tools.css sets the title and its description side by side. On this
+       site the description reads better under the title, so the hero stacks at
+       every width. Scoped to .page-shell, so it touches only the tool pages. */
+.page-shell .nt-hero {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.45rem;
+}
+
 /* 2. The notes under a tool are page content, so main.css gives them the
       850px reading column, centres it, and sets h2 to 1.9rem. Under a tool that
       runs the full width of the shell, that reads as a different page: the text
@@ -52,13 +60,18 @@
   line-height: 1.35;
 }
 
-/* Both blocks, the About paragraph and the Common questions, share one
-   reading measure. Full width ran past 150 characters a line, and splitting
-   only the About paragraph into columns made the two blocks look unrelated. */
-.page-shell .tool-notes h2,
-.page-shell .tool-notes h3,
-.page-shell .tool-notes p {
-  max-width: 75ch;
+/* 2b. A page that sets "wide: true" (the tools index) runs its heading, intro
+       and content across the whole shell like the tool pages do, instead of
+       sitting in the 850px reading column. Nothing else uses page-shell-wide. */
+.page-shell-wide .page-header,
+.page-shell-wide .page-content {
+  max-width: none;
+  margin-inline: 0;
+}
+
+.page-shell-wide .page-header h1,
+.page-shell-wide .page-header p {
+  max-width: none;
 }
 
 /* 3. main.css carries the full dropdown styling but switches it off with
