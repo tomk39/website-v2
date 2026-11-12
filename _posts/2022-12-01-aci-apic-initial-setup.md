@@ -108,7 +108,7 @@ This is only zero day configuration for Cisco APIC. For MultiPod, Multisite,
 Remote Leaf and other Cisco ACI Fabric designs should be configured other parameters
 and network objects.
 ```  
-<img class="center" width="800" height="400" src="/images/apic_day_0_config/24.jpg" alt="" title="">  
+<img class="center" width="800" height="400" src="/images/apic_day_0_config/24.jpg" alt="APIC dashboard showing leaf-101, leaf-102 and spine-103 healthy and the controller fully fit" title="APIC dashboard">  
 <br/>
 <br/>
 **Bonus steps** for those how like to have clean ACI fabric without lot of system notifications.  
